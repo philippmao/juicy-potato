@@ -1,5 +1,5 @@
 #pragma once
-#include "Objidl.h"
+#include "objidl.h"
 
 class IStorageTrigger : public IMarshal, public IStorage {
 private:
