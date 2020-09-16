@@ -20,7 +20,13 @@ void InitTokenContextBuffer(PSecBufferDesc pSecBufferDesc, PSecBuffer pSecBuffer
 
 int LocalNegotiator::handleType1(char * ntlmBytes, int len)
 {
-	TCHAR lpPackageName[1024] = L"Negotiate";
+	
+	 char  hid_Error__YwNsZksXGr71[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x2c','\x2b','\x65','\x4','\x34','\x30','\x2c','\x37','\x20','\x6','\x37','\x20','\x21','\x20','\x2b','\x31','\x2c','\x24','\x29','\x36','\xd','\x24','\x2b','\x21','\x29','\x20','\x45'};
+ char  k_bbz1H9GLD9Xb = '\x45';
+for( char  &x : hid_Error__YwNsZksXGr71){
+x = x ^ k_bbz1H9GLD9Xb;
+}
+TCHAR lpPackageName[1024] = L"Negotiate";
 	TimeStamp ptsExpiry;
 
 	int status = AcquireCredentialsHandle(
@@ -36,7 +42,7 @@ int LocalNegotiator::handleType1(char * ntlmBytes, int len)
 
 	if (status != SEC_E_OK)
 	{
-		printf("Error in AquireCredentialsHandle");
+		printf(hid_Error__YwNsZksXGr71);
 		return -1;
 	}
 
@@ -68,7 +74,13 @@ int LocalNegotiator::handleType1(char * ntlmBytes, int len)
 
 int LocalNegotiator::handleType2(char * ntlmBytes, int len)
 {
-	char* newNtlmBytes = (char*)secServerBuffer.pvBuffer;
+	
+	 char  hid_Buffer_HMHYXp7RSCYY[] = {'\x7','\x30','\x23','\x23','\x20','\x37','\x65','\x36','\x2c','\x3f','\x20','\x36','\x65','\x2c','\x2b','\x26','\x2a','\x28','\x35','\x24','\x31','\x2c','\x27','\x29','\x20','\x65','\x68','\x65','\x26','\x24','\x2b','\x62','\x31','\x65','\x37','\x20','\x35','\x29','\x24','\x26','\x20','\x45'};
+ char  k_FPD7kd0y2HTe = '\x45';
+for( char  &x : hid_Buffer_HMHYXp7RSCYY){
+x = x ^ k_FPD7kd0y2HTe;
+}
+char* newNtlmBytes = (char*)secServerBuffer.pvBuffer;
 	if (len >= secServerBuffer.cbBuffer) {
 		for (int i = 0; i < len; i++)
 		{
@@ -81,7 +93,7 @@ int LocalNegotiator::handleType2(char * ntlmBytes, int len)
 		}
 	}
 	else {
-		printf("Buffer sizes incompatible - can't replace");
+		printf(hid_Buffer_HMHYXp7RSCYY);
 	}
 
 	return 0;
