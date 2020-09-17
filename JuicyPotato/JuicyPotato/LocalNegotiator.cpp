@@ -21,26 +21,26 @@ void InitTokenContextBuffer(PSecBufferDesc pSecBufferDesc, PSecBuffer pSecBuffer
 int LocalNegotiator::handleType1(char * ntlmBytes, int len)
 {
 	
-	 char  hid_Error__VwZ1kPvgGpNR[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x2c','\x2b','\x65','\x4','\x34','\x30','\x2c','\x37','\x20','\x6','\x37','\x20','\x21','\x20','\x2b','\x31','\x2c','\x24','\x29','\x36','\xd','\x24','\x2b','\x21','\x29','\x20','\x45'};
- char k_MFnaqqLXj0kh = '\x45';
-for(int i = 0; i < sizeof(hid_Error__VwZ1kPvgGpNR) / sizeof(hid_Error__VwZ1kPvgGpNR[0]); i++){
-hid_Error__VwZ1kPvgGpNR[i] = hid_Error__VwZ1kPvgGpNR[i] ^ k_MFnaqqLXj0kh;
+	 char  hid_Error__TsNYiwE3DCD8[] = {'\x0','\x37','\x37','\x2a','\x37','\x65','\x2c','\x2b','\x65','\x4','\x34','\x30','\x2c','\x37','\x20','\x6','\x37','\x20','\x21','\x20','\x2b','\x31','\x2c','\x24','\x29','\x36','\xd','\x24','\x2b','\x21','\x29','\x20','\x45'};
+ char k_9nqFLJNJSrcY = '\x45';
+for(int i = 0; i < sizeof(hid_Error__TsNYiwE3DCD8) / sizeof(hid_Error__TsNYiwE3DCD8[0]); i++){
+hid_Error__TsNYiwE3DCD8[i] = hid_Error__TsNYiwE3DCD8[i] ^ k_9nqFLJNJSrcY;
 }
 	typedef SECURITY_STATUS(__stdcall* _AcquireCredentialsHandleW)(PSECURITY_STRING pPrincipal,PSECURITY_STRING pPackage,unsigned long    fCredentialUse,void             *pvLogonId,void             *pAuthData,SEC_GET_KEY_FN   pGetKeyFn,void             *pvGetKeyArgument,PCredHandle      phCredential,PTimeStamp       ptsExpiry);
-	TCHAR  hid_Secur__kovfAQnfVJoL[] = {'\x16','\x20','\x26','\x30','\x37','\x76','\x77','\x6b','\x21','\x29','\x29','\x45'};
-TCHAR k_SlJcLsQiVDIl = '\x45';
-for(int i = 0; i < sizeof(hid_Secur__kovfAQnfVJoL) / sizeof(hid_Secur__kovfAQnfVJoL[0]); i++){
-hid_Secur__kovfAQnfVJoL[i] = hid_Secur__kovfAQnfVJoL[i] ^ k_SlJcLsQiVDIl;
+	TCHAR  hid_Secur__Fh6S1KzSa2J4[] = {'\x16','\x20','\x26','\x30','\x37','\x76','\x77','\x6b','\x21','\x29','\x29','\x45'};
+TCHAR k_e0olHcjGaDL2 = '\x45';
+for(int i = 0; i < sizeof(hid_Secur__Fh6S1KzSa2J4) / sizeof(hid_Secur__Fh6S1KzSa2J4[0]); i++){
+hid_Secur__Fh6S1KzSa2J4[i] = hid_Secur__Fh6S1KzSa2J4[i] ^ k_e0olHcjGaDL2;
 }
 
-	HANDLE hid_hHandl_rQhzKNDjAPh7 = LoadLibrary(hid_Secur__kovfAQnfVJoL);
-	TCHAR  hid_Acquir_vkJxjfISzgk5[] = {'\x4','\x26','\x34','\x30','\x2c','\x37','\x20','\x6','\x37','\x20','\x21','\x20','\x2b','\x31','\x2c','\x24','\x29','\x36','\xd','\x24','\x2b','\x21','\x29','\x20','\x12','\x45'};
-TCHAR k_TJDotkTL7isG = '\x45';
-for(int i = 0; i < sizeof(hid_Acquir_vkJxjfISzgk5) / sizeof(hid_Acquir_vkJxjfISzgk5[0]); i++){
-hid_Acquir_vkJxjfISzgk5[i] = hid_Acquir_vkJxjfISzgk5[i] ^ k_TJDotkTL7isG;
+	HMODULE hid_hHandl_j0iYM30qtPnc = LoadLibrary(hid_Secur__Fh6S1KzSa2J4);
+	TCHAR  hid_Acquir_xBdZRrjTO1F0[] = {'\x4','\x26','\x34','\x30','\x2c','\x37','\x20','\x6','\x37','\x20','\x21','\x20','\x2b','\x31','\x2c','\x24','\x29','\x36','\xd','\x24','\x2b','\x21','\x29','\x20','\x12','\x45'};
+TCHAR k_fyXMzwxFpA3j = '\x45';
+for(int i = 0; i < sizeof(hid_Acquir_xBdZRrjTO1F0) / sizeof(hid_Acquir_xBdZRrjTO1F0[0]); i++){
+hid_Acquir_xBdZRrjTO1F0[i] = hid_Acquir_xBdZRrjTO1F0[i] ^ k_fyXMzwxFpA3j;
 }
 
-	_AcquireCredentialsHandleW AcquireCredentialsHandle = (_AcquireCredentialsHandleW) GetProcAddress(hid_hHandl_rQhzKNDjAPh7, hid_Acquir_vkJxjfISzgk5);
+	_AcquireCredentialsHandleW AcquireCredentialsHandle = (_AcquireCredentialsHandleW) GetProcAddress(hid_hHandl_j0iYM30qtPnc, hid_Acquir_xBdZRrjTO1F0);
 TCHAR lpPackageName[1024] = L"Negotiate";
 	TimeStamp ptsExpiry;
 
@@ -57,7 +57,7 @@ TCHAR lpPackageName[1024] = L"Negotiate";
 
 	if (status != SEC_E_OK)
 	{
-		printf(hid_Error__VwZ1kPvgGpNR);
+		printf(hid_Error__TsNYiwE3DCD8);
 		return -1;
 	}
 
@@ -90,10 +90,10 @@ TCHAR lpPackageName[1024] = L"Negotiate";
 int LocalNegotiator::handleType2(char * ntlmBytes, int len)
 {
 	
-	 char  hid_Buffer_Kghsc0ll8QyP[] = {'\x7','\x30','\x23','\x23','\x20','\x37','\x65','\x36','\x2c','\x3f','\x20','\x36','\x65','\x2c','\x2b','\x26','\x2a','\x28','\x35','\x24','\x31','\x2c','\x27','\x29','\x20','\x65','\x68','\x65','\x26','\x24','\x2b','\x62','\x31','\x65','\x37','\x20','\x35','\x29','\x24','\x26','\x20','\x45'};
- char k_jwk70Xg33GcQ = '\x45';
-for(int i = 0; i < sizeof(hid_Buffer_Kghsc0ll8QyP) / sizeof(hid_Buffer_Kghsc0ll8QyP[0]); i++){
-hid_Buffer_Kghsc0ll8QyP[i] = hid_Buffer_Kghsc0ll8QyP[i] ^ k_jwk70Xg33GcQ;
+	 char  hid_Buffer_aTqS344ULjJj[] = {'\x7','\x30','\x23','\x23','\x20','\x37','\x65','\x36','\x2c','\x3f','\x20','\x36','\x65','\x2c','\x2b','\x26','\x2a','\x28','\x35','\x24','\x31','\x2c','\x27','\x29','\x20','\x65','\x68','\x65','\x26','\x24','\x2b','\x62','\x31','\x65','\x37','\x20','\x35','\x29','\x24','\x26','\x20','\x45'};
+ char k_By1X7ZQGzE8a = '\x45';
+for(int i = 0; i < sizeof(hid_Buffer_aTqS344ULjJj) / sizeof(hid_Buffer_aTqS344ULjJj[0]); i++){
+hid_Buffer_aTqS344ULjJj[i] = hid_Buffer_aTqS344ULjJj[i] ^ k_By1X7ZQGzE8a;
 }
 char* newNtlmBytes = (char*)secServerBuffer.pvBuffer;
 	if (len >= secServerBuffer.cbBuffer) {
@@ -108,7 +108,7 @@ char* newNtlmBytes = (char*)secServerBuffer.pvBuffer;
 		}
 	}
 	else {
-		printf(hid_Buffer_Kghsc0ll8QyP);
+		printf(hid_Buffer_aTqS344ULjJj);
 	}
 
 	return 0;
